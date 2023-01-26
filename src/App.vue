@@ -1,11 +1,13 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import { provide } from 'vue'
 import NavMain from './components/NavMain.vue'
-const paths = [
-  'foo', 
-  'bar', 
-  'baz'
+
+const creatures = [
+  {name: "Foo Monster", slug: "foo-monster"},
+  {name: "Bar Monster", slug: "bar-monster"},
 ]
+provide('creatures', creatures)
 </script>
 
 <template>
@@ -16,7 +18,7 @@ const paths = [
   </header>
 
   <div class="wrapper wrapper-main">
-    <NavMain :paths="paths" />
+    <NavMain />
 
     <div class="content-main">
       <RouterView />

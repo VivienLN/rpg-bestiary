@@ -1,24 +1,15 @@
 <script setup>
   import { RouterLink, RouterView } from 'vue-router'
-  defineProps({
-    paths: {
-      type: Array,
-      required: true
-    }
-  })
+  import { inject } from 'vue'
+
+  const creatures = inject('creatures')
 </script>
 
 <template>
   <nav class="nav-main">
     <ul>
-      <li v-for="path in paths">
-        <RouterLink :to="'/c/' + path">{{path}}</RouterLink>
-      </li>
-    </ul>
-    <!-- Both work -->
-    <ul>
-      <li v-for="path in paths">
-        <RouterLink :to="{ name: 'creature', params: { creature: path }}">{{path}}</RouterLink>
+      <li v-for="c in creatures" :key="c.slug">
+        <RouterLink :to="'/c/' + c.slug">{{c.name}}</RouterLink>
       </li>
     </ul>
   </nav>
