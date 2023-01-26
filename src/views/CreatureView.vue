@@ -1,16 +1,29 @@
 <script setup>
-  import { inject, computed } from 'vue'
+  import { inject, computed, ref, reactive, onMounted } from 'vue'
   import { useRoute } from 'vue-router'
 
-  const creatures = inject('creatures')
-  const route = useRoute()
+  const props = defineProps({
+    creatures: {
+      type: Array,
+      required: true
+    },
+    slug: {
+      type: String,
+      required: true
+    },
+  })
 
-  // Fetch creature info
   const creature = computed(() => {
-    return creatures.find(c => c.slug === route.params.creature)
+    return props.creatures.find(c => c.slug === props.slug)
   })
 </script>
 
 <template>
   <h1>{{ creature.name }}</h1>
+  <ul>
+    <li v-for="c in creatures" :key="c.slug">
+      {{c.name}}
+    </li>
+  </ul>
+  <!-- <h1>{{ creature.name }}</h1> -->
 </template>

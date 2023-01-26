@@ -1,29 +1,35 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import { provide } from 'vue'
+import { defineAsyncComponent, onMounted, reactive, ref } from 'vue'
 import NavMain from './components/NavMain.vue'
+import Loading from './components/Loading.vue'
+import Bestiary from './components/Bestiary.vue'
 
-const creatures = [
-  {name: "Foo Monster", slug: "foo-monster"},
-  {name: "Bar Monster", slug: "bar-monster"},
-]
-provide('creatures', creatures)
+// const data = reactive({
+//   creatures: null
+// })
+const creatures = ref(null)
+
+onMounted(async () => {
+  console.log('App mounted')
+  let response = await fetch('./src/data/creatures.json')
+  let data = await response.json()
+  creatures.value = data
+})
 </script>
 
 <template>
   <header class="header-main">
     <div class="wrapper">
-      <h1>Bestiaire</h1>
+      <h1>
+        <RouterLink to="/">Bestiaire</RouterLink>
+      </h1>
     </div>
   </header>
 
-  <div class="wrapper wrapper-main">
-    <NavMain />
+  <Bestiary v-if="creatures" :creatures="creatures" />
+  <!-- <Loading v-else /> -->
 
-    <div class="content-main">
-      <RouterView />
-    </div>
-  </div>
 </template>
 
 <style scoped>

@@ -1,8 +1,13 @@
 <script setup>
   import { RouterLink, RouterView } from 'vue-router'
-  import { inject } from 'vue'
+  
+  defineProps({
+    creatures: {
+      type: Array,
+      required: true
+    }
+  })
 
-  const creatures = inject('creatures')
 </script>
 
 <template>
