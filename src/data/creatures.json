@@ -23,12 +23,75 @@
       ["Semi-aquatique", "Tient 15mn en apnée"],
       ["Contact empoisonné", "Attaque pour toucher (p. 100), ou si contact, la victime doit réussir un jet de vigueur ou subir un poison modéré."]
     ],
-    "magic": [
-      ["Spores hypnotisantes", "cf. Marionnette p. 166"]
+    "melee": [
+      ["Epieu court", "Combat d4, 2d4"],
+      ["Balayage", "Combat d4-2, 2d4"]
+    ],
+    "ranged": [
+      ["Arbalète légère", "Tir d6, 10/20/40, 2d6"]
+    ]
+  },
+  {
+    "name": "Doyen Gorog",
+    "agi": 10,
+    "str": 6,
+    "pace": 7,
+    "parry": 5,
+    "toughness": {"total": 6, "armor": 2},
+    "skills": [
+      ["Athlétisme", 12],
+      ["Combat", 8],
+      ["Culture générale", 4],
+      ["Discrétion", 10],
+      ["Perception", 8],
+      ["Persuasion", 4],
+      ["Soins", 6],
+      ["Survie", 10],
+      ["Tir", 8]
+    ],
+    "hindrances": [
+      ["Taille -1", "Résistance -1"]
+    ],
+    "edges": [
+      ["Bond", "+4 aux dégats lorsqu'il bondit pour faire une attaque totale. Peut sauter 2x plus haut et plus loin."],
+      ["Semi-aquatique", "Tient 15mn en apnée"],
+      ["Contact empoisonné", "Attaque pour toucher (p. 100), ou si contact, la victime doit réussir un jet de vigueur ou subir un poison modéré."]
     ],
     "melee": [
-      ["Lance", "Combat d4, 2d4"],
-      ["Balayage", "Combat d4-2, 2d4"]
+      ["Lance", "Combat d8, 2d6 ; Allonge +1, Parade +1 si utilisé à deux mains."],
+      ["Balayage", "Combat d8-2, 2d6"]
+    ],
+    "ranged": [
+      ["Arbalète légère", "Tir d8, 10/20/40, 2d6"]
+    ]
+  },
+  {
+    "name": "Gorog des Marais",
+    "agi": 6,
+    "str": 6,
+    "parry": 4,
+    "toughness": {"total": 3, "armor": 1},
+    "skills": [
+      ["Athlétisme", 6],
+      ["Combat", 4],
+      ["Discrétion", 6],
+      ["Perception", 4],
+      ["Persuasion", 4],
+      ["Soins", 4],
+      ["Survie", 4],
+      ["Tir", 6]
+    ],
+    "hindrances": [
+      ["Taille -1", "Résistance -1"]
+    ],
+    "edges": [
+      ["Bond", "+4 aux dégats lorsqu'il bondit pour faire une attaque totale. Peut sauter 2x plus haut et plus loin."],
+      ["Semi-aquatique", "Tient 15mn en apnée"],
+      ["Contact empoisonné", "Attaque pour toucher (p. 100), ou si contact, la victime doit réussir un jet de vigueur ou subir un poison modéré."]
+    ],
+    "melee": [
+      ["Epieu court", "Combat d4, d6+d4"],
+      ["Balayage", "Combat d4-2, d6+d4"]
     ],
     "ranged": [
       ["Arbalète légère", "Tir d6, 10/20/40, 2d6"]
@@ -67,7 +130,8 @@
       ["Contact empoisonné", "Attaque pour toucher (p. 100), ou si contact, la victime doit réussir un jet de vigueur ou subir un poison modéré."]
     ],
     "magic": [
-      ["Spores hypnotisantes", "cf. Marionnette p. 166"]
+      ["Spores hypnotisantes", "cf. Marionnette p. 166"],
+      ["Convocation de Moisissure vivante", "Magie d10, convoque 1 [[Moisissure vivante]]."]
     ],
     "melee": [
       ["Bâton", "Combat d4, 2d4"]
@@ -77,7 +141,33 @@
     ]
   },
   {
+    "name": "Moisissure vivante",
+    "pace": 5,
+    "parry": 5,
+    "toughness": {"total": 5, "armor": 0},
+    "skills": [
+      ["Athlétisme", 6],
+      ["Combat", 6],
+      ["Perception", 6],
+      ["Tir", 4]
+    ],
+    "hindrances": [
+      ["Odeur putride", "On le sent venir à des kilomètres"]
+    ],
+    "edges": [
+      ["Sans peur", "Immunisé à Terreur et Intimidation"],
+      ["Enfouissement", "Se décompose et se recompose ailleurs, cf. p. 176"]
+    ],
+    "melee": [
+      ["Griffe moisie", "Combat d6, 2d4"]
+    ],
+    "ranged": [
+      ["Lance-champote", "Tir d4, 5/10/20, 2d4"]
+    ]
+  },
+  {
     "name": "Zimachi",
+    "unique": true,
     "joker": true,
     "hearts": 3,
     "agi": 6,
@@ -103,13 +193,14 @@
       ["Enfouissement", "cf. p. 176"]
     ],
     "magic": [
-      ["Convocation d'esprit du Babouin", "Invoque [[Esprit du Titan Babouin (Zimachi)]]."],
+      ["Convocation d'esprit du Babouin", "Réussit toujours. Convoque [[Esprit du Titan Babouin (Zimachi)]]."],
       ["Dague spirituelle", "Magie d10, 2d6 dégâts"],
       ["Guérison", "Magie d10, Soigne 1 blessure < 1h"]
     ]
   },
   {
     "name": "Esprit du Titan Babouin (Zimachi)",
+    "unique": true,
     "hearts": 1,
     "agi": 6,
     "spi": 6,

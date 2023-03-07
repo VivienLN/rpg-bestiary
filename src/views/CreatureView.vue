@@ -46,50 +46,52 @@
 </script>
 
 <template>
-  <h1 :class="{ joker: creature.joker }">
-    <IconSkull v-if="creature.joker" class="icon icon-joker" />
-    <span>
-      {{ creature.name }}
-    </span>
-    <span class="hearts">
-      <IconHeart v-for="i in creature.hearts" :key="i" class="icon icon-heart" />
-    </span>
-  </h1>
-  <div class="block block-toughness">
-    <h3 class="inline">Rés.&nbsp;:</h3>
-    <span>{{ creature.toughness.total }} ({{ creature.toughness.armor }})</span>
+  <div :class="{ unique: creature.unique }">
+    <h1 :class="{ joker: creature.joker }">
+      <IconSkull v-if="creature.joker" class="icon icon-joker" />
+      <span>
+        {{ creature.name }}
+      </span>
+      <span class="hearts">
+        <IconHeart v-for="i in creature.hearts" :key="i" class="icon icon-heart" />
+      </span>
+    </h1>
+    <div class="block block-toughness">
+      <h3 class="inline">Rés.&nbsp;:</h3>
+      <span>{{ creature.toughness.total }} ({{ creature.toughness.armor }})</span>
+    </div>
+    <ul class="block block-attributes">
+      <li><h3>Agi</h3><span>{{ toDiceNotation(creature.agi || 4) }}</span></li>
+      <li><h3>Âme</h3><span>{{ toDiceNotation(creature.spi || 4) }}</span></li>
+      <li><h3>For</h3><span>{{ toDiceNotation(creature.str || 4) }}</span></li>
+      <li><h3>Int</h3><span>{{ toDiceNotation(creature.sma || 4) }}</span></li>
+      <li><h3>Vig</h3><span>{{ toDiceNotation(creature.vig || 4) }}</span></li>
+      <li><h3>Allure</h3><span>{{ creature.pace || 6 }}</span></li>
+      <li><h3>Parade</h3><span>{{ creature.parry }}</span></li>
+    </ul>
+    <div class="skills">
+      <h3 class="inline">Compétences&nbsp;:</h3>
+      {{ creature.skills.map(s => `${s[0]}&nbsp;${toDiceNotation(s[1])}`).join(', ') }}
+    </div>
+    <ul class="details">
+      <li v-for="(d, i) in details" :key="i" :class="d.type">
+        <h4 class="inline">
+          <IconSword v-if="d.type=='melee'" class="icon" />
+          <IconBow v-if="d.type=='ranged'" class="icon" />
+          <IconBolt v-if="d.type=='magic'" class="icon" />
+          <IconStar v-if="d.type=='edge'" class="icon" />
+          <IconStar v-if="d.type=='hindrance'" class="icon" />
+          {{ d.name }}{{ d.description ? "&nbsp;:" : "" }}
+        </h4>
+        <computed-text :text="d.description" />
+      </li>
+    </ul>
   </div>
-  <ul class="block block-attributes">
-    <li><h3>Agi</h3><span>{{ toDiceNotation(creature.agi || 4) }}</span></li>
-    <li><h3>Âme</h3><span>{{ toDiceNotation(creature.spi || 4) }}</span></li>
-    <li><h3>Int</h3><span>{{ toDiceNotation(creature.sma || 4) }}</span></li>
-    <li><h3>Vig</h3><span>{{ toDiceNotation(creature.vig || 4) }}</span></li>
-    <li><h3>Allure</h3><span>{{ creature.pace || 6 }}</span></li>
-    <li><h3>Parade</h3><span>{{ creature.parry }}</span></li>
-  </ul>
-  <div class="skills">
-    <h3 class="inline">Compétences&nbsp;:</h3>
-    {{ creature.skills.map(s => `${s[0]} ${toDiceNotation(s[1])}`).join(', ') }}
-  </div>
-  <ul class="details">
-    <li v-for="(d, i) in details" :key="i" :class="d.type">
-      <h4 class="inline">
-        <IconSword v-if="d.type=='melee'" class="icon" />
-        <IconBow v-if="d.type=='ranged'" class="icon" />
-        <IconBolt v-if="d.type=='magic'" class="icon" />
-        <IconStar v-if="d.type=='edge'" class="icon" />
-        <IconStar v-if="d.type=='hindrance'" class="icon" />
-        {{ d.name }}
-        {{ d.description ? "&nbsp;:" : "" }}
-      </h4>
-      <computed-text :text="d.description" />
-    </li>
-  </ul>
 </template>
 
 <style scoped>
   h1 {
-    background: #c54859;
+    background: linear-gradient(165deg, var(--color-primary) 20%, var(--color-primary-2) 100%);
     border-radius: .4rem;
     padding: .3rem 1rem .4rem;
     margin-bottom: .4rem;
@@ -115,23 +117,23 @@
   }
   h1 .icon-heart {
     fill: #fff;
-    margin-left: .2rem;
-    height: .9em;
+    margin-left: .4rem;
+    height: .8em;
   }
   h1 .icon-joker {
     height: 2.8rem;
     position: absolute;
     top: -.2rem;
     left: .2rem;
-    filter: drop-shadow(-1px -1px 0 #c54859)
-            drop-shadow(0 -1px 0 #c54859)
-            drop-shadow(1px -1px 0 #c54859)
-            drop-shadow(-1px 0 0 #c54859)
-            drop-shadow(0 0 0 #c54859)
-            drop-shadow(1px 0 0 #c54859)
-            drop-shadow(-1px 1px 0 #c54859)
-            drop-shadow(0 1px 0 #c54859)
-            drop-shadow(1px 1px 0 #c54859);
+    filter: drop-shadow(-1px -1px 0 var(--color-primary))
+            drop-shadow(0 -1px 0 var(--color-primary))
+            drop-shadow(1px -1px 0 var(--color-primary))
+            drop-shadow(-1px 0 0 var(--color-primary))
+            drop-shadow(0 0 0 var(--color-primary))
+            drop-shadow(1px 0 0 var(--color-primary))
+            drop-shadow(-1px 1px 0 var(--color-primary))
+            drop-shadow(0 1px 0 var(--color-primary))
+            drop-shadow(1px 1px 0 var(--color-primary));
   }
   .inline {
     font-size: inherit;
@@ -185,10 +187,34 @@
   }
 
   .details li {
+    position: relative;
+    padding-left: 1.26em;
+  }
+
+  .details li .icon {
+    position: absolute;
+    left: 0;
+    top: .16em;
   }
 
   .details h4 {
     font-weight: bold;
+  }
+
+  .unique h1 .icon-joker {
+    filter: drop-shadow(-1px -1px 0 var(--color-unique))
+            drop-shadow(0 -1px 0 var(--color-unique))
+            drop-shadow(1px -1px 0 var(--color-unique))
+            drop-shadow(-1px 0 0 var(--color-unique))
+            drop-shadow(0 0 0 var(--color-unique))
+            drop-shadow(1px 0 0 var(--color-unique))
+            drop-shadow(-1px 1px 0 var(--color-unique))
+            drop-shadow(0 1px 0 var(--color-unique))
+            drop-shadow(1px 1px 0 var(--color-unique));
+  }
+
+  .unique h1 {
+    background: linear-gradient(165deg, var(--color-unique) 20%, var(--color-unique-2) 100%);
   }
 
 </style>

@@ -21,7 +21,7 @@
   <nav class="nav-main">
     <ul>
       <li v-for="(c, i) in sortedCreatures" :key="i">
-        <RouterLink :to="'/c/' + slugify(c.name)">
+        <RouterLink :to="'/c/' + slugify(c.name)" :class="{ unique: c.unique }">
           {{c.name}}
           <IconSkull v-if="c.joker" class="icon" />
         </RouterLink>
@@ -59,10 +59,17 @@
   }
   a.router-link-active {
     font-weight: bold;
-    background: #eaeaea;
-    color: #c54859;
+    background: #f5f5f5;
+    color: var(--color-primary);
   }
   a.router-link-active svg {
-    fill: #c54859;
+    fill: var(--color-primary);
+  }
+  
+  a.unique.router-link-active {
+    color: var(--color-unique);
+  }
+  a.unique.router-link-active svg {
+    fill: var(--color-unique);
   }
 </style>

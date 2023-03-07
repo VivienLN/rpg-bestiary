@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;700&family=Labrada:wght@400;700&display=swap');
 
 :root {
-  
+  --color-primary: #6a4dc8;
+  --color-primary-2: #289da1;
+  --color-unique: #c54859;
+  --color-unique-2: #f68c3b;
 }
 
 *,
@@ -9,7 +12,6 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  position: relative;
   font-weight: inherit;
 }
 
@@ -22,5 +24,5 @@ body {
 
 a {
   text-decoration: none;
-  color: #c54859;
+  color: var(--color-primary);
 }

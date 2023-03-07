@@ -33,7 +33,7 @@
 <style scoped>
 a {
   text-decoration: underline;
-  color: #c54859;
+  color: var(--color-primary);
   font-weight: bold;
 }
 
