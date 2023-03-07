@@ -1,18 +1,70 @@
 <script setup>
-  import { computed } from 'vue'
+  import { computed, ref } from 'vue'
   import { RouterLink, RouterView } from 'vue-router'
   import { slugify } from '../helpers.js'
   import IconSkull from '../components/icons/IconSkull.vue'
+  import Fuzzyset from 'fuzzyset'
   
   const props = defineProps({
     creatures: {
       type: Array,
       required: true
+    },
+    search: {
+      type: String,
+      required: false
     }
   })
 
-  const sortedCreatures = computed(() => {
-    return props.creatures.sort((a, b) => a.name.localeCompare(b.name))
+  // Append tags to creatures, tags being anything we can search on:
+  // name, hindrances, etc.
+  const allTags = ref([]);
+  const taggedCreatures = computed(() => {
+    return props.creatures.map(c => {
+      let tags = []
+      tags.push(c.name)
+      tags.push(c.name.split(/[\s-]/))
+      tags.push((c.skills || []).map(d => d[0]))
+      tags.push((c.hindrances || []).map(d => d[0]))
+      tags.push((c.edges || []).map(d => d[0]))
+      tags.push((c.melee || []).map(d => d[0]))
+      tags.push((c.ranged || []).map(d => d[0]))
+      tags.push((c.magic || []).map(d => d[0]))
+      c.tags = tags
+        .flat(10)
+        .map(t => t.toLowerCase().replace(/[-_\[\(\]\)"']/g, ''))
+        .filter(t => t.length >= 4)
+      allTags.value.push(...c.tags)
+      return c
+    })
+  })
+
+  const filteredCreatures = computed(() => {
+    var creatures = taggedCreatures.value
+    if(props.search)  {
+      // Search in the global tags list
+      let results = Fuzzyset(allTags.value).get(props.search, null, .3)
+      if(results) {
+        // Add score to creature objects
+        creatures = creatures.map(c => {
+          // Add the score of each tag in results (if associated to this creature)
+          let score = results.reduce((total, r) => {
+            let confidence = r[0]
+            let foundTag = r[1]
+            if(c.tags.includes(foundTag)) return total + confidence
+            return total
+          }, 0)
+          c.score = score
+          return c
+        })
+        // Filtered creatures
+        return creatures.filter(c => c.score > 0).sort((a, b) => b.score - a.score)
+      }
+      // No result
+      return []
+    }
+    // All creatures, no filter
+    return creatures.sort((a, b) => a.name.localeCompare(b.name))
   })
 
 </script>
@@ -20,7 +72,7 @@
 <template>
   <nav class="nav-main">
     <ul>
-      <li v-for="(c, i) in sortedCreatures" :key="i">
+      <li v-for="(c, i) in filteredCreatures" :key="i">
         <RouterLink :to="'/c/' + slugify(c.name)" :class="{ unique: c.unique }">
           {{c.name}}
           <IconSkull v-if="c.joker" class="icon" />
