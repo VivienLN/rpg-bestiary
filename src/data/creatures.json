@@ -1,8 +1,42 @@
 [
   {
-    "name": "Foo Monster"
-  },
-  {
-    "name": "Bar Monster"
+    "name": "Mycomancien Gorog",
+    "agi": 6,
+    "spi": 4,
+    "str": 6,
+    "sma": 10,
+    "vig": 4,
+    "pace": 6,
+    "parry": 5,
+    "toughness": {"total": 4, "armor": 2},
+    "skills": [
+      ["Athlétisme", 6],
+      ["Combat", 4],
+      ["Culture générale", 4],
+      ["Discrétion", 10],
+      ["Perception", 6],
+      ["Persuasion", 6],
+      ["Soins", 4],
+      ["Survie", 8],
+      ["Tir", 4],
+      ["Magie", 10]
+    ],
+    "hindrances": [
+      ["Taille -1", "Résistance -1"]
+    ],
+    "edges": [
+      ["Bond", "+4 aux dégats lorsqu'il bondit pour faire une attaque totale. Peut sauter 2x plus haut et plus loin."],
+      ["Semi-aquatique"],
+      ["Contact empoisonné", "Attaque pour toucher (p. 100), ou si contact, la victime doit réussir un jet de vigueur ou subir un poison modéré."]
+    ],
+    "magic": [
+      ["Spores hypnotisantes", "cf. Marionnette p. 166"]
+    ],
+    "melee": [
+      ["Bâton", "Combat d4, 2d4"]
+    ],
+    "ranged": [
+      ["Pistolet", "Tir d4, 5/10/20, 2d6+1"]
+    ]
   }
 ]
