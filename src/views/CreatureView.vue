@@ -28,11 +28,11 @@
   const details = computed(() => {
     let c = creature.value
     return []
-      .concat(c.hindrances.map(i => formatDetails(i, 'hindrance')))
-      .concat(c.edges.map(i => formatDetails(i, 'edge')))
-      .concat(c.magic.map(i => formatDetails(i, 'magic')))
-      .concat(c.melee.map(i => formatDetails(i, 'melee')))
-      .concat(c.ranged.map(i => formatDetails(i, 'ranged')))
+      .concat((c.hindrances || []).map(i => formatDetails(i, 'hindrance')))
+      .concat((c.edges || []).map(i => formatDetails(i, 'edge')))
+      .concat((c.magic || []).map(i => formatDetails(i, 'magic')))
+      .concat((c.melee || []).map(i => formatDetails(i, 'melee')))
+      .concat((c.ranged || []).map(i => formatDetails(i, 'ranged')))
   })
 
   const formatDetails = function(value, type) {
@@ -50,7 +50,7 @@
     <span>
       {{ creature.name }}
     </span>
-    <span>
+    <span class="hearts">
       <IconHeart v-for="i in creature.hearts" :key="i" class="icon icon-heart" />
     </span>
   </h1>
@@ -94,7 +94,7 @@
     margin-bottom: .4rem;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.4em;
+    font-size: 1.2em;
     letter-spacing: -.02em;
     font-weight: bold;
     position: relative;
@@ -102,10 +102,15 @@
     justify-content: space-between;
   }
   h1.joker {
-    padding-left: 3.4rem;
+    padding-left: 3.2rem;
   }
   h1 .icon {
     fill: #fff;
+  }
+  h1 .hearts {
+    flex-grow: 1;
+    text-align: right;
+    white-space: nowrap;
   }
   h1 .icon-heart {
     fill: #fff;
@@ -113,7 +118,7 @@
     height: .9em;
   }
   h1 .icon-joker {
-    height: 3rem;
+    height: 2.8rem;
     position: absolute;
     top: -.2rem;
     left: .2rem;
