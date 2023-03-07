@@ -1,12 +1,17 @@
 <script setup>
+  import { computed } from 'vue'
   import { RouterLink, RouterView } from 'vue-router'
   import { slugify } from '../helpers.js'
   
-  defineProps({
+  const props = defineProps({
     creatures: {
       type: Array,
       required: true
     }
+  })
+
+  const sortedCreatures = computed(() => {
+    return props.creatures.sort((a, b) => a.name.localeCompare(b.name))
   })
 
 </script>
@@ -14,7 +19,7 @@
 <template>
   <nav class="nav-main">
     <ul>
-      <li v-for="(c, i) in creatures" :key="i">
+      <li v-for="(c, i) in sortedCreatures" :key="i">
         <RouterLink :to="'/c/' + slugify(c.name)">{{c.name}}</RouterLink>
       </li>
     </ul>

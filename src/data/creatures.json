@@ -2,6 +2,7 @@
   {
     "name": "Gorog",
     "agi": 6,
+    "parry": 5,
     "toughness": {"total": 3, "armor": 1},
     "skills": [
       ["Athlétisme", 8],
