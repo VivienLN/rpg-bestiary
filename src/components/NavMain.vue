@@ -113,7 +113,9 @@
   a {
     color: #000;
     display: block;
-    padding: 0.5rem;
+    padding: .4rem .6rem;
+    border-radius: .4rem;
+    margin-bottom: .2rem;
   }
   .icon {
     height: 1em;
@@ -122,12 +124,12 @@
     top: -.1rem;
   }
   a:hover {
-    background: #f5f5f5;
+    background: #eee;
     transition: .2s;
   }
   a.router-link-active {
     font-weight: bold;
-    background: #f5f5f5;
+    background: #eee;
     color: var(--color-primary);
   }
   a.router-link-active svg {
