@@ -28,7 +28,7 @@ onMounted(async () => {
   </header>
 
   <Bestiary v-if="creatures" :creatures="creatures" />
-  <!-- <Loading v-else /> -->
+  <Loading v-else />
 
 </template>
 

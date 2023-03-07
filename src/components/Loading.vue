@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="wrapper wrapper-main">
     Chargement...
   </div>
 </template>

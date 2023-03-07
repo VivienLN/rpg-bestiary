@@ -11,12 +11,11 @@
   })
 
   const route = useRoute()
-  const slug = computed(() => {console.log("PUTAIND E SA MERE", route.params.creature); return route.params.creature; })
+  const slug = computed(() => route.params.creature)
 </script>
 
 <template>
   <div class="wrapper wrapper-main">
-    Bestiaire
     <NavMain :creatures="creatures" :slug="slug" />
 
     <div class="content-main">
