@@ -2,6 +2,7 @@
   import { computed } from 'vue'
   import { RouterLink, RouterView } from 'vue-router'
   import { slugify } from '../helpers.js'
+  import IconSkull from '../components/icons/IconSkull.vue'
   
   const props = defineProps({
     creatures: {
@@ -20,7 +21,10 @@
   <nav class="nav-main">
     <ul>
       <li v-for="(c, i) in sortedCreatures" :key="i">
-        <RouterLink :to="'/c/' + slugify(c.name)">{{c.name}}</RouterLink>
+        <RouterLink :to="'/c/' + slugify(c.name)">
+          {{c.name}}
+          <IconSkull v-if="c.joker" class="icon" />
+        </RouterLink>
       </li>
     </ul>
   </nav>
@@ -43,6 +47,13 @@
     display: block;
     padding: 0.5rem;
     background: #eee;
+  }
+  .icon {
+    height: 1em;
+    vertical-align: middle;
+    position: relative;
+    top: -.1rem;
+    opacity: .6;
   }
   a:hover {
     background: #ddd;

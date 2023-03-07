@@ -103,41 +103,41 @@
       ["Enfouissement", "cf. p. 176"]
     ],
     "magic": [
-      ["Convocation d'esprit du Babouin", "Invoque [[Esprit du Babouin (Zimachi)]]."],
+      ["Convocation d'esprit du Babouin", "Invoque [[Esprit du Titan Babouin (Zimachi)]]."],
       ["Dague spirituelle", "Magie d10, 2d6 dégâts"],
       ["Guérison", "Magie d10, Soigne 1 blessure < 1h"]
     ]
   },
   {
-    "name": "Esprit du Babouin (Zimachi)",
-    "joker": true,
-    "hearts": 3,
+    "name": "Esprit du Titan Babouin (Zimachi)",
+    "hearts": 1,
     "agi": 6,
     "spi": 6,
-    "str": 4,
-    "sma": 10,
-    "vig": 6,
-    "pace": 6,
-    "parry": 4,
-    "toughness": {"total": 6, "armor": 1},
+    "str": 8,
+    "sma": 4,
+    "vig": 8,
+    "pace": 5,
+    "parry": 5,
+    "toughness": {"total": 10, "armor": 0},
     "skills": [
       ["Athlétisme", 4],
-      ["Culture générale", 4],
-      ["Education", 6],
-      ["Discrétion", 6],
+      ["Combat", 6],
       ["Perception", 8],
-      ["Persuasion", 8],
-      ["Magie", 10]
+      ["Tir", 6]
+    ],
+    "hindrances": [
+      ["Lumineux", "Impossible de se cacher"]
     ],
     "edges": [
-      ["Semi-aquatique", "Tient 15mn en apnée"],
-      ["Vision nocturne"],
-      ["Enfouissement", "cf. p. 176"]
+      ["Taille 2", "Mesure environ 2,50m"],
+      ["Vision nocturne"]
     ],
-    "magic": [
-      ["Convocation d'esprit du Babouin", "Invoque Esprit du Babouin"],
-      ["Dague spirituelle", "Magie d10, 2d6 dégâts"],
-      ["Guérison", "Magie d10, Soigne 1 blessure < 1h"]
+    "melee": [
+      ["Colonne (comme arme de mêlée)", "Combat d6 (balayage : -2), d6+d8. Attaquer sa main pour qu'il la lâche."],
+      ["Mains nues", "Combat d6, d8 de dégâts"]
+    ],
+    "ranged": [
+      ["Colonne (lancée)", "Tir d4, 1/2/4, 2d8"]
     ]
   }
 ]
