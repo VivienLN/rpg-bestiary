@@ -6,6 +6,8 @@
   import IconBolt from '../components/icons/IconBolt.vue'
   import IconBow from '../components/icons/IconBow.vue'
   import IconStar from '../components/icons/IconStar.vue'
+  import IconSkull from '../components/icons/IconSkull.vue'
+  import IconHeart from '../components/icons/IconHeart.vue'
 
 
   const props = defineProps({
@@ -43,7 +45,15 @@
 </script>
 
 <template>
-  <h1>{{ creature.name }}</h1>
+  <h1 :class="{ joker: creature.joker }">
+    <IconSkull v-if="creature.joker" class="icon icon-joker" />
+    <span>
+      {{ creature.name }}
+    </span>
+    <span>
+      <IconHeart v-for="i in creature.hearts" :key="i" class="icon icon-heart" />
+    </span>
+  </h1>
   <div class="block block-toughness">
     <h3 class="inline">Rés.&nbsp;:</h3>
     <span>{{ creature.toughness.total }} ({{ creature.toughness.armor }})</span>
@@ -80,12 +90,42 @@
   h1 {
     background: #ae4e9d;
     border-radius: .4rem;
-    padding: .4rem 1rem;
+    padding: .3rem 1rem .4rem;
     margin-bottom: .4rem;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.215em;
+    font-size: 1.4em;
+    letter-spacing: -.02em;
     font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  h1.joker {
+    padding-left: 3.4rem;
+  }
+  h1 .icon {
+    fill: #fff;
+  }
+  h1 .icon-heart {
+    fill: #fff;
+    margin-left: .2rem;
+    height: .9em;
+  }
+  h1 .icon-joker {
+    height: 3rem;
+    position: absolute;
+    top: -.2rem;
+    left: .2rem;
+    filter: drop-shadow(-1px -1px 0 #ae4e9d)
+            drop-shadow(0 -1px 0 #ae4e9d)
+            drop-shadow(1px -1px 0 #ae4e9d)
+            drop-shadow(-1px 0 0 #ae4e9d)
+            drop-shadow(0 0 0 #ae4e9d)
+            drop-shadow(1px 0 0 #ae4e9d)
+            drop-shadow(-1px 1px 0 #ae4e9d)
+            drop-shadow(0 1px 0 #ae4e9d)
+            drop-shadow(1px 1px 0 #ae4e9d);
   }
   .inline {
     font-size: inherit;
@@ -118,7 +158,7 @@
     justify-content: space-between;
     text-align: center;
     padding-bottom: .6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
   }
   .block-attributes h3 {
     margin-bottom: 0;
@@ -129,7 +169,7 @@
   }
 
   .skills {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
   }
 
   .details {
@@ -139,7 +179,6 @@
   }
 
   .details li {
-    margin-bottom: .2rem;
   }
 
   .details h4 {

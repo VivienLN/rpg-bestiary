@@ -1,6 +1,8 @@
 [
   {
     "name": "Mycomancien Gorog",
+    "joker": false,
+    "hearts": 0,
     "agi": 6,
     "spi": 4,
     "str": 6,
