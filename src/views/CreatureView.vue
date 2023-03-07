@@ -58,7 +58,10 @@
     </h1>
     <div class="block block-toughness">
       <h3 class="inline">Rés.&nbsp;:</h3>
-      <span>{{ creature.toughness.total }} ({{ creature.toughness.armor }})</span>
+      <span>
+        {{ creature.toughness.total }} 
+        {{ creature.toughness.armor ? `(${creature.toughness.armor})` : "" }}
+      </span>
     </div>
     <ul class="block block-attributes">
       <li><h3>Agi</h3><span>{{ toDiceNotation(creature.agi || 4) }}</span></li>
