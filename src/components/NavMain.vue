@@ -46,19 +46,23 @@
     color: #000;
     display: block;
     padding: 0.5rem;
-    background: #eee;
   }
   .icon {
     height: 1em;
     vertical-align: middle;
     position: relative;
     top: -.1rem;
-    opacity: .6;
   }
   a:hover {
-    background: #ddd;
+    background: #f5f5f5;
+    transition: .2s;
   }
   a.router-link-active {
     font-weight: bold;
+    background: #eaeaea;
+    color: #c54859;
+  }
+  a.router-link-active svg {
+    fill: #c54859;
   }
 </style>
