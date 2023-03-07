@@ -28,9 +28,10 @@
 
 <style scoped>
   .search {
-    margin-bottom: 1rem;
-    padding: .6rem;
+    margin-bottom: 2rem;
+    padding: 0 .6rem;
     border: 1px solid #ddd;
+    border-bottom-width: 3px;
     border-radius: .4rem;
     display: flex;
     align-items: center;
@@ -39,18 +40,19 @@
   }
 
   .icon {
-    width: 1em;
+    width: 1.1em;
     padding-top: .2rem;
+    margin: 0 .4rem;
     fill: #888;
   }
 
   input[type="text"] {
+    padding: .8rem 0;
     border: none;
     width: 100%;
     outline: none;
     font-family: inherit;
     font-size: inherit;
-    padding-bottom: .2rem;
     line-height: 1;
   }
 </style>

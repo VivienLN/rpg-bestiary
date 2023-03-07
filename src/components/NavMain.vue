@@ -71,7 +71,7 @@
 
 <template>
   <nav class="nav-main">
-    <ul>
+    <ul v-if="filteredCreatures.length">
       <li v-for="(c, i) in filteredCreatures" :key="i">
         <RouterLink :to="'/c/' + slugify(c.name)" :class="{ unique: c.unique }">
           {{c.name}}
@@ -79,6 +79,9 @@
         </RouterLink>
       </li>
     </ul>
+    <div v-else>
+      Aucun résultat trouvé :(
+    </div>
   </nav>
 </template>
 
