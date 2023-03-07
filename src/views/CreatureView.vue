@@ -2,6 +2,7 @@
   import { inject, computed, ref, reactive, onMounted } from 'vue'
   import { useRoute } from 'vue-router'
   import { slugify, toDiceNotation } from '../helpers.js'
+  import ComputedText from '../components/ComputedText.vue'
   import IconSword from '../components/icons/IconSword.vue'
   import IconBolt from '../components/icons/IconBolt.vue'
   import IconBow from '../components/icons/IconBow.vue'
@@ -80,15 +81,15 @@
         <IconStar v-if="d.type=='hindrance'" class="icon" />
         {{ d.name }}
         {{ d.description ? "&nbsp;:" : "" }}
-      </h4> 
-      {{ d.description }}
+      </h4>
+      <computed-text :text="d.description" />
     </li>
   </ul>
 </template>
 
 <style scoped>
   h1 {
-    background: #ae4e9d;
+    background: #c54859;
     border-radius: .4rem;
     padding: .3rem 1rem .4rem;
     margin-bottom: .4rem;
@@ -122,15 +123,15 @@
     position: absolute;
     top: -.2rem;
     left: .2rem;
-    filter: drop-shadow(-1px -1px 0 #ae4e9d)
-            drop-shadow(0 -1px 0 #ae4e9d)
-            drop-shadow(1px -1px 0 #ae4e9d)
-            drop-shadow(-1px 0 0 #ae4e9d)
-            drop-shadow(0 0 0 #ae4e9d)
-            drop-shadow(1px 0 0 #ae4e9d)
-            drop-shadow(-1px 1px 0 #ae4e9d)
-            drop-shadow(0 1px 0 #ae4e9d)
-            drop-shadow(1px 1px 0 #ae4e9d);
+    filter: drop-shadow(-1px -1px 0 #c54859)
+            drop-shadow(0 -1px 0 #c54859)
+            drop-shadow(1px -1px 0 #c54859)
+            drop-shadow(-1px 0 0 #c54859)
+            drop-shadow(0 0 0 #c54859)
+            drop-shadow(1px 0 0 #c54859)
+            drop-shadow(-1px 1px 0 #c54859)
+            drop-shadow(0 1px 0 #c54859)
+            drop-shadow(1px 1px 0 #c54859);
   }
   .inline {
     font-size: inherit;

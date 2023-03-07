@@ -20,7 +20,7 @@
     ],
     "edges": [
       ["Bond", "+4 aux dégats lorsqu'il bondit pour faire une attaque totale. Peut sauter 2x plus haut et plus loin."],
-      ["Semi-aquatique"],
+      ["Semi-aquatique", "Tient 15mn en apnée"],
       ["Contact empoisonné", "Attaque pour toucher (p. 100), ou si contact, la victime doit réussir un jet de vigueur ou subir un poison modéré."]
     ],
     "magic": [
@@ -63,7 +63,7 @@
     ],
     "edges": [
       ["Bond", "+4 aux dégats lorsqu'il bondit pour faire une attaque totale. Peut sauter 2x plus haut et plus loin."],
-      ["Semi-aquatique"],
+      ["Semi-aquatique", "Tient 15mn en apnée"],
       ["Contact empoisonné", "Attaque pour toucher (p. 100), ou si contact, la victime doit réussir un jet de vigueur ou subir un poison modéré."]
     ],
     "magic": [
@@ -74,6 +74,70 @@
     ],
     "ranged": [
       ["Pistolet", "Tir d4, 5/10/20, 2d6+1"]
+    ]
+  },
+  {
+    "name": "Zimachi",
+    "joker": true,
+    "hearts": 3,
+    "agi": 6,
+    "spi": 6,
+    "str": 4,
+    "sma": 10,
+    "vig": 6,
+    "pace": 6,
+    "parry": 4,
+    "toughness": {"total": 6, "armor": 1},
+    "skills": [
+      ["Athlétisme", 4],
+      ["Culture générale", 4],
+      ["Education", 6],
+      ["Discrétion", 6],
+      ["Perception", 8],
+      ["Persuasion", 8],
+      ["Magie", 10]
+    ],
+    "edges": [
+      ["Semi-aquatique", "Tient 15mn en apnée"],
+      ["Vision nocturne"],
+      ["Enfouissement", "cf. p. 176"]
+    ],
+    "magic": [
+      ["Convocation d'esprit du Babouin", "Invoque [[Esprit du Babouin (Zimachi)]]."],
+      ["Dague spirituelle", "Magie d10, 2d6 dégâts"],
+      ["Guérison", "Magie d10, Soigne 1 blessure < 1h"]
+    ]
+  },
+  {
+    "name": "Esprit du Babouin (Zimachi)",
+    "joker": true,
+    "hearts": 3,
+    "agi": 6,
+    "spi": 6,
+    "str": 4,
+    "sma": 10,
+    "vig": 6,
+    "pace": 6,
+    "parry": 4,
+    "toughness": {"total": 6, "armor": 1},
+    "skills": [
+      ["Athlétisme", 4],
+      ["Culture générale", 4],
+      ["Education", 6],
+      ["Discrétion", 6],
+      ["Perception", 8],
+      ["Persuasion", 8],
+      ["Magie", 10]
+    ],
+    "edges": [
+      ["Semi-aquatique", "Tient 15mn en apnée"],
+      ["Vision nocturne"],
+      ["Enfouissement", "cf. p. 176"]
+    ],
+    "magic": [
+      ["Convocation d'esprit du Babouin", "Invoque Esprit du Babouin"],
+      ["Dague spirituelle", "Magie d10, 2d6 dégâts"],
+      ["Guérison", "Magie d10, Soigne 1 blessure < 1h"]
     ]
   }
 ]
