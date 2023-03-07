@@ -2,12 +2,6 @@
   {
     "name": "Gorog",
     "agi": 6,
-    "spi": 4,
-    "str": 4,
-    "sma": 4,
-    "vig": 4,
-    "pace": 6,
-    "parry": 4,
     "toughness": {"total": 3, "armor": 1},
     "skills": [
       ["Athlétisme", 8],

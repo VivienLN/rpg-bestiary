@@ -59,11 +59,11 @@
     <span>{{ creature.toughness.total }} ({{ creature.toughness.armor }})</span>
   </div>
   <ul class="block block-attributes">
-    <li><h3>Agi</h3><span>{{ toDiceNotation(creature.agi) }}</span></li>
-    <li><h3>Âme</h3><span>{{ toDiceNotation(creature.spi) }}</span></li>
-    <li><h3>Int</h3><span>{{ toDiceNotation(creature.sma) }}</span></li>
-    <li><h3>Vig</h3><span>{{ toDiceNotation(creature.vig) }}</span></li>
-    <li><h3>Allure</h3><span>{{ creature.pace }}</span></li>
+    <li><h3>Agi</h3><span>{{ toDiceNotation(creature.agi || 4) }}</span></li>
+    <li><h3>Âme</h3><span>{{ toDiceNotation(creature.spi || 4) }}</span></li>
+    <li><h3>Int</h3><span>{{ toDiceNotation(creature.sma || 4) }}</span></li>
+    <li><h3>Vig</h3><span>{{ toDiceNotation(creature.vig || 4) }}</span></li>
+    <li><h3>Allure</h3><span>{{ creature.pace || 6 }}</span></li>
     <li><h3>Parade</h3><span>{{ creature.parry }}</span></li>
   </ul>
   <div class="skills">
