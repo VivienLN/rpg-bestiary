@@ -1,6 +1,7 @@
 <script setup>
   import { inject, computed, ref, reactive, onMounted } from 'vue'
   import { useRoute } from 'vue-router'
+  import { slugify } from '../helpers.js'
 
   const props = defineProps({
     creatures: {
@@ -14,16 +15,10 @@
   })
 
   const creature = computed(() => {
-    return props.creatures.find(c => c.slug === props.slug)
+    return props.creatures.find(c => slugify(c.name) === props.slug)
   })
 </script>
 
 <template>
   <h1>{{ creature.name }}</h1>
-  <ul>
-    <li v-for="c in creatures" :key="c.slug">
-      {{c.name}}
-    </li>
-  </ul>
-  <!-- <h1>{{ creature.name }}</h1> -->
 </template>

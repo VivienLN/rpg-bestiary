@@ -1,4 +1,8 @@
 [
-  {"name": "Foo Monster", "slug": "foo-monster"},
-  {"name": "Bar Monster", "slug": "bar-monster"}
+  {
+    "name": "Foo Monster"
+  },
+  {
+    "name": "Bar Monster"
+  }
 ]

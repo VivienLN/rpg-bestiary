@@ -1,5 +1,6 @@
 <script setup>
   import { RouterLink, RouterView } from 'vue-router'
+  import { slugify } from '../helpers.js'
   
   defineProps({
     creatures: {
@@ -13,8 +14,8 @@
 <template>
   <nav class="nav-main">
     <ul>
-      <li v-for="c in creatures" :key="c.slug">
-        <RouterLink :to="'/c/' + c.slug">{{c.name}}</RouterLink>
+      <li v-for="(c, i) in creatures" :key="i">
+        <RouterLink :to="'/c/' + slugify(c.name)">{{c.name}}</RouterLink>
       </li>
     </ul>
   </nav>
