@@ -1,5 +1,9 @@
 @import './base.css';
 
+body {
+  padding-bottom: 2rem;
+}
+
 .wrapper {
   width: 100%;
   max-width: 1200px;
@@ -10,14 +14,16 @@
 .header-main {
   background: #eee;
   padding: 1rem 0;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
-.wrapper-main {
-  display: flex;
-  align-items: justify;
-}
+@media (min-width: 768px) { 
+  .wrapper-main {
+    display: flex;
+    align-items: justify;
+  }
 
-.content-main {
-  flex: 1;
+  .content-main {
+    flex: 1;
+  }
 }

@@ -70,27 +70,40 @@
 </script>
 
 <template>
-  <nav class="nav-main">
-    <ul v-if="filteredCreatures.length">
-      <li v-for="(c, i) in filteredCreatures" :key="i">
-        <RouterLink :to="'/c/' + slugify(c.name)" :class="{ unique: c.unique }">
-          {{c.name}}
-          <IconSkull v-if="c.joker" class="icon" />
-        </RouterLink>
-      </li>
-    </ul>
-    <div v-else>
-      Aucun résultat trouvé :(
-    </div>
-  </nav>
+  <div class="nav-main--wrapper">
+    <nav class="nav-main">
+      <ul v-if="filteredCreatures.length">
+        <li v-for="(c, i) in filteredCreatures" :key="i">
+          <RouterLink :to="'/c/' + slugify(c.name)" :class="{ unique: c.unique }">
+            {{c.name}}
+            <IconSkull v-if="c.joker" class="icon" />
+          </RouterLink>
+        </li>
+      </ul>
+      <div v-else>
+        Aucun résultat trouvé :(
+      </div>
+    </nav>
+  </div>
 </template>
 
 <style scoped>
   .nav-main {
-    width: 50%;
-    padding-right: 1rem;
-    margin-right: 1rem;
-    border-right: 1px solid #eee;
+    margin-bottom: 2rem;
+    max-height: 25vh;
+    overflow-y: auto;
+  }
+  .nav-main--wrapper {
+    position: relative;
+  }
+  .nav-main--wrapper::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 6px;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 10%, rgba(0,0,0,.2) 100%);
   }
   ul {
     list-style: none;
@@ -126,5 +139,22 @@
   }
   a.unique.router-link-active svg {
     fill: var(--color-unique);
+  }
+
+  @media (min-width: 768px) { 
+    .nav-main--wrapper {
+      width: 37.5%;
+    }
+    .nav-main--wrapper::after {
+      display: none;
+    }
+    .nav-main {
+      padding-right: 1rem;
+      margin-right: 1rem;
+      border-right: 1px solid #eee;
+      margin-bottom: 0;
+      max-height: none;
+      overflow-y: visible;
+    }
   }
 </style>
