@@ -1,5 +1,45 @@
 [
   {
+    "name": "Gorog",
+    "agi": 6,
+    "spi": 4,
+    "str": 4,
+    "sma": 4,
+    "vig": 4,
+    "pace": 6,
+    "parry": 4,
+    "toughness": {"total": 3, "armor": 1},
+    "skills": [
+      ["Athlétisme", 8],
+      ["Combat", 4],
+      ["Culture générale", 4],
+      ["Discrétion", 6],
+      ["Perception", 4],
+      ["Persuasion", 4],
+      ["Soins", 4],
+      ["Survie", 4],
+      ["Tir", 6]
+    ],
+    "hindrances": [
+      ["Taille -1", "Résistance -1"]
+    ],
+    "edges": [
+      ["Bond", "+4 aux dégats lorsqu'il bondit pour faire une attaque totale. Peut sauter 2x plus haut et plus loin."],
+      ["Semi-aquatique"],
+      ["Contact empoisonné", "Attaque pour toucher (p. 100), ou si contact, la victime doit réussir un jet de vigueur ou subir un poison modéré."]
+    ],
+    "magic": [
+      ["Spores hypnotisantes", "cf. Marionnette p. 166"]
+    ],
+    "melee": [
+      ["Lance", "Combat d4, 2d4"],
+      ["Balayage", "Combat d4-2, 2d4"]
+    ],
+    "ranged": [
+      ["Arbalète légère", "Tir d6, 10/20/40, 2d6"]
+    ]
+  },
+  {
     "name": "Mycomancien Gorog",
     "joker": false,
     "hearts": 0,
