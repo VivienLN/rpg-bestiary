@@ -12,7 +12,7 @@ const creatures = ref(null)
 
 onMounted(async () => {
   console.log('App mounted')
-  let response = await fetch('./src/data/creatures.json')
+  let response = await fetch('/src/data/creatures.json')
   let data = await response.json()
   creatures.value = data
 })
