@@ -15,7 +15,7 @@
 </script>
 
 <template>
-  <div class="search">
+  <label class="search">
     <IconSearch class="icon" />
     <input 
       type="text" 
@@ -23,11 +23,12 @@
       :value="modelValue"
       @input="$emit('update:modelValue', $event.target.value)"
     />
-  </div>
+  </label>
 </template>
 
 <style scoped>
   .search {
+    display: block;
     margin-bottom: 2rem;
     padding: 0 .6rem;
     border: 1px solid #ddd;
@@ -37,6 +38,7 @@
     align-items: center;
     justify-content: stretch;
     gap: .2rem;
+    transition: .4s;
   }
 
   .icon {
@@ -44,6 +46,7 @@
     padding-top: .2rem;
     margin: 0 .4rem;
     fill: #888;
+    transition: .4s;
   }
 
   input[type="text"] {
@@ -54,5 +57,15 @@
     font-family: inherit;
     font-size: inherit;
     line-height: 1;
+    /* color: var(--color-primary); */
+    font-weight: bold;
+  }
+
+  .search:focus-within {
+    border-color: var(--color-primary);
+  }
+
+  .search:focus-within .icon {
+    fill: var(--color-primary);
   }
 </style>
