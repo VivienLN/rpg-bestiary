@@ -43,7 +43,7 @@
     var creatures = taggedCreatures.value
     if(props.search)  {
       // Search in the global tags list
-      let results = Fuzzyset(allTags.value).get(props.search, null, .3)
+      let results = Fuzzyset(allTags.value).get(props.search, null, .6)
       if(results) {
         // Add score to creature objects
         creatures = creatures.map(c => {
