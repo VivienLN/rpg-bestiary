@@ -72,7 +72,7 @@
     width: 1.1em;
     padding-top: .2rem;
     margin: 0 .4rem;
-    fill: #888;
+    fill: var(--color-gray);
     transition: .4s;
   }
 
