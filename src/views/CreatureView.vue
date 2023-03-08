@@ -47,37 +47,47 @@
 
 <template>
   <div :class="{ unique: creature.unique }">
-    <h1 :class="{ joker: creature.joker }">
-      <Transition name="icon">
-        <IconSkull v-if="creature.joker" class="icon icon-joker" />
-      </Transition>
-      <span>
-        {{ creature.name }}
-      </span>
-      <span class="hearts">
-        <TransitionGroup name="icon">
-          <IconHeart v-for="i in creature.hearts" :key="i" class="icon icon-heart" />
-        </TransitionGroup>
-      </span>
-    </h1>
+      <h1 :class="{ joker: creature.joker }">
+        <Transition name="icon">
+          <IconSkull v-if="creature.joker" class="icon icon-joker" />
+        </Transition>
 
-    <div class="block block-toughness" :key="slug">
-      <h3 class="inline">Rés.&nbsp;:</h3>
-      <span>
-        {{ creature.toughness.total }} 
-        {{ creature.toughness.armor ? `(${creature.toughness.armor})` : "" }}
-      </span>
-    </div>
+        <Transition name="text" mode="out-in" :duration="300" appear>
+          <div :key="slug">
+            <span>
+              {{ creature.name }}
+            </span>
+          </div>
+        </Transition>
 
-    <ul class="block block-attributes" :key="slug">
-      <li><h3>Agi</h3><span>{{ toDiceNotation(creature.agi || 4) }}</span></li>
-      <li><h3>Âme</h3><span>{{ toDiceNotation(creature.spi || 4) }}</span></li>
-      <li><h3>For</h3><span>{{ toDiceNotation(creature.str || 4) }}</span></li>
-      <li><h3>Int</h3><span>{{ toDiceNotation(creature.sma || 4) }}</span></li>
-      <li><h3>Vig</h3><span>{{ toDiceNotation(creature.vig || 4) }}</span></li>
-      <li><h3>Allure</h3><span>{{ creature.pace || 6 }}</span></li>
-      <li><h3>Parade</h3><span>{{ creature.parry }}</span></li>
-    </ul>
+        <span class="hearts">
+          <TransitionGroup name="icon">
+            <IconHeart v-for="i in creature.hearts" :key="i" class="icon icon-heart" />
+          </TransitionGroup>
+        </span>
+      </h1>
+
+    <Transition name="text" mode="out-in" :duration="300" appear>
+      <div class="block block-toughness" :key="slug">
+        <h3 class="inline">Rés.&nbsp;:</h3>
+        <span>
+          {{ creature.toughness.total }} 
+          {{ creature.toughness.armor ? `(${creature.toughness.armor})` : "" }}
+        </span>
+      </div>
+    </Transition>
+
+    <Transition name="text" mode="out-in" :duration="300" appear>
+      <ul class="block block-attributes" :key="slug">
+          <li><h3>Agi</h3><span>{{ toDiceNotation(creature.agi || 4) }}</span></li>
+          <li><h3>Âme</h3><span>{{ toDiceNotation(creature.spi || 4) }}</span></li>
+          <li><h3>For</h3><span>{{ toDiceNotation(creature.str || 4) }}</span></li>
+          <li><h3>Int</h3><span>{{ toDiceNotation(creature.sma || 4) }}</span></li>
+          <li><h3>Vig</h3><span>{{ toDiceNotation(creature.vig || 4) }}</span></li>
+          <li><h3>Allure</h3><span>{{ creature.pace || 6 }}</span></li>
+          <li><h3>Parade</h3><span>{{ creature.parry }}</span></li>
+      </ul>
+    </Transition>
 
     <Transition name="slide" mode="out-in" :duration="400" appear>
       <div class="skills" :key="slug">
@@ -119,6 +129,9 @@
     display: flex;
     justify-content: space-between;
     transition: .4s;
+  }
+  h1 span {
+    display: inline-block;
   }
   h1.joker {
     padding-left: 3.2rem;
@@ -179,6 +192,10 @@
     font-weight: normal;
   }
 
+  .block-toughness span {
+    display: inline-block;
+  }
+
   .block-attributes {
     display: flex;
     list-style: none;
@@ -193,6 +210,7 @@
   }
   .block-attributes span {
     font-weight: bold;
+    display: inline-block;
   }
 
   .skills {
@@ -236,6 +254,20 @@
     background: linear-gradient(165deg, var(--color-unique) 20%, var(--color-unique-2) 100%);
   }
 
+  .text-enter-active span,
+  .text-leave-active span {
+    transition: all .2s ease;
+  }
+
+  .text-enter-from span {
+    opacity: 0;
+    transform: translateX(-4px);
+  }
+  .text-leave-to span {
+    opacity: 0;
+    transform: translateX(4px);
+  }
+
   .icon-enter-active,
   .icon-leave-active {
     transition: all .4s ease-in-out;
@@ -253,7 +285,7 @@
 
   .slide-leave-to {
     opacity: 0;
-    transform: translateX(-18px);
+    transform: translateX(18px);
   }
   
   .slide-enter-active {
