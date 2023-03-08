@@ -8,7 +8,7 @@
   const creatures = ref(null)
 
   onMounted(async () => {
-    let response = await fetch('/data/creatures.json')
+    let response = await fetch('/rpg-bestiary/data/creatures.json')
     let data = await response.json()
     creatures.value = data
   })
