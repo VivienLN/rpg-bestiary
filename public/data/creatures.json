@@ -481,5 +481,25 @@
       ["Protection", "Magie d10, une cible. Confère armure +2."],
       ["Croissance", "Magie d10, une cible. Taille +2, augmente la force de 2d et la résistance de 2."]
     ]
+  },
+  {
+    "name": "Nuée de moustiques déchaînés",
+    "agi": 10,
+    "spi": 10,
+    "str": 6,
+    "sma": 4,
+    "vig": 10,
+    "parry": 4,
+    "pace": 10,
+    "toughness": {"total": 7, "armor": 0},
+    "skills": [
+      ["Perception", 6]
+    ],
+    "edges": [
+      ["Essaim", "Annule Secoué +2, Parade +2, immunisé aux armes perforantes ou tranchantes, subit les Zones d'effet et le Piétinement."]
+    ],
+    "melee": [
+      ["Piqûre", "Automatique en fin de tour (sauf si secoué), 2d4 contre protection la plus faible, sans effet contre une protection totalement étanche"]
+    ]
   }
 ]
