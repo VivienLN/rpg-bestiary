@@ -81,6 +81,7 @@
   },
   {
     "name": "Esprit du Ragondin",
+    "image": "https://www.larousse.fr/encyclopedie/data/images/1005747-Ragondin.jpg",
     "pace": 4,
     "parry": 4,
     "toughness": {"total": 4, "armor": 0},
@@ -379,6 +380,76 @@
     ],
     "ranged": [
       ["Colonne (lancée)", "Tir d4, 1/2/4, 2d8"]
+    ]
+  },
+  {
+    "name": "Jeune dinoléon",
+    "image": "https://www.hep6.com/wp-content/uploads/2022/06/chameleon-10.jpg",
+    "hearts": 1,
+    "agi": 10,
+    "spi": 8,
+    "str": 12,
+    "sma": 6,
+    "vig": 8,
+    "pace": 9,
+    "parry": 6,
+    "toughness": {"total": 8, "armor": 0},
+    "skills": [
+      ["Athlétisme", 12],
+      ["Combat", 6],
+      ["Discrétion", 8],
+      ["Perception", 6]
+    ],
+    "hindrances": [
+      ["Point faible (Oeil)", "Les attaques sur les yeux infligent +4 de dégâts."]
+    ],
+    "edges": [
+      ["Taille 3", "Mesure 4m de haut et pèse environ 1 tonne."],
+      ["Langue collante", "Ignore 2 points de malus d'actions multiples chaque tour."],
+      ["Adhérence", "Peut se déplacer normalement sur les surfaces verticales ou à la moitié de son allure la tête en bas"]
+    ],
+    "melee": [
+      ["Coup de langue", "Combat d6, d12. Allonge 2."],
+      ["Coup de boule", "Combat d6, d12+2"],
+      ["Balayage de queue", "Combat d6-2, d12"]
+    ],
+    "magic": [
+      ["Invisibilité", "Âme d8, devient transparent mais un peu flou avec de vagues contours. Toute action à son encontre requiérant la vue se fait à -4 (-6 si prouesse). Même malus sur un jet de Perception pour s'aviser de sa présence."]
+    ]
+  },
+  {
+    "name": "Dinoléon adulte",
+    "image": "https://i.pinimg.com/736x/b5/79/1a/b5791a2dea2fc0e367713330bca490b0.jpg",
+    "hearts": 2,
+    "agi": 12,
+    "spi": 10,
+    "str": 14,
+    "sma": 6,
+    "vig": 8,
+    "pace": 10,
+    "parry": 6,
+    "toughness": {"total": 11, "armor": 0},
+    "skills": [
+      ["Athlétisme", 12],
+      ["Combat", 10],
+      ["Discrétion", 8],
+      ["Perception", 10]
+    ],
+    "hindrances": [
+      ["Point faible (Oeil)", "Les attaques sur les yeux infligent +4 de dégâts."]
+    ],
+    "edges": [
+      ["Taille 6", "Grand (+2). Mesure 8m de haut et pèse 8 tonnes."],
+      ["Langue collante", "Ignore 2 points de malus d'actions multiples chaque tour."],
+      ["Adhérence", "Peut se déplacer normalement sur les surfaces verticales ou à la moitié de son allure la tête en bas"]
+    ],
+    "melee": [
+      ["Coup de langue", "Combat d10, d12+2. Allonge 3."],
+      ["Coup de boule", "Combat d10, d12+4. Allonge 1."],
+      ["Balayage de queue", "Combat d10-2, d12+2. Allonge 1."]
+    ],
+    "magic": [
+      ["Invisibilité", "Âme d10, devient transparent mais un peu flou avec de vagues contours. Toute action à son encontre requiérant la vue se fait à -4 (-6 si prouesse). Même malus sur un jet de Perception pour s'aviser de sa présence."]
     ]
   }
 ]
