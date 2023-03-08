@@ -19,7 +19,7 @@
 
   .img-link {
     display: block;
-    border: 1px solid var(--color-gray-light);
+    border: 1px solid var(--color-gray-lighter);
     border-bottom-width: 3px;
     padding: .4rem;
     border-radius: .4rem;
@@ -30,7 +30,7 @@
 
   .img-link:hover, .img-link:focus {
     border-color: var(--color-primary);
-    /* background-color: var(--color-gray-light); */
+    /* background-color: var(--color-gray-lighter); */
   }
 
   img {

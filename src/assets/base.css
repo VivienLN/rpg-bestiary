@@ -5,7 +5,9 @@
   --color-primary-2: #289da1;
   --color-unique: #c54859;
   --color-unique-2: #f68c3b;
-  --color-gray-light: #eeeef2;
+  --color-gray-lighter: #eeeef2;
+  --color-gray-light: #ddd;
+  --color-gray: #777;
 }
 
 *,

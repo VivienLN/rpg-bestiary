@@ -12,7 +12,7 @@ body {
 }
 
 .header-main {
-  background: var(--color-gray-light);
+  background: var(--color-gray-lighter);
   padding: 1rem 0;
   margin-bottom: 2rem;
 }

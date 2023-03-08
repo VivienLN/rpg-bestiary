@@ -13,6 +13,14 @@
     search: {
       type: String,
       required: false
+    },
+    showJokers: {
+      type: Boolean,
+      required: false
+    },
+    showUniques: {
+      type: Boolean,
+      required: false
     }
   })
 
@@ -41,6 +49,12 @@
 
   const filteredCreatures = computed(() => {
     var creatures = taggedCreatures.value
+    // Filters
+    creatures = creatures.filter(c => !(
+        (props.showJokers === false && c.joker) || 
+        (props.showUniques === false && c.unique)
+    ))
+    // Search
     if(props.search)  {
       // Search in the global tags list
       let results = Fuzzyset(allTags.value).get(props.search, null, .6)
@@ -124,12 +138,12 @@
     top: -.1rem;
   }
   a:hover {
-    background: var(--color-gray-light);
+    background: var(--color-gray-lighter);
     transition: .2s;
   }
   a.router-link-active {
     font-weight: bold;
-    background: var(--color-gray-light);
+    background: var(--color-gray-lighter);
     color: var(--color-primary);
   }
   a.router-link-active svg {
@@ -153,7 +167,7 @@
     .nav-main {
       padding-right: 1rem;
       margin-right: 1rem;
-      border-right: 1px solid var(--color-gray-light);
+      border-right: 1px solid var(--color-gray-lighter);
       margin-bottom: 0;
       height: 100%;
       overflow-y: visible;

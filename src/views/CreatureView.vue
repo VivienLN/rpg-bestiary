@@ -181,7 +181,7 @@
     margin-right: .2rem;
   }
   .block {
-    background: var(--color-gray-light);
+    background: var(--color-gray-lighter);
     margin: 0 0 .4rem;
     border-radius: .4rem;
     padding: .4rem 1rem;

@@ -1,16 +1,27 @@
 <script setup>
   import IconSearch from './icons/IconSearch.vue'
+  import Checkbox from './Checkbox.vue'
   import { ref } from 'vue'
 
   defineProps({
-    modelValue: {
+    terms: {
       type: String,
+      required: true
+    },
+    showJokers: {
+      type: Boolean,
+      required: true
+    },
+    showUniques: {
+      type: Boolean,
       required: true
     }
   })
 
   defineEmits([
-    'update:modelValue'
+    'update:terms',
+    'update:showJokers',
+    'update:showUniques'
   ])
 </script>
 
@@ -20,18 +31,34 @@
     <input 
       type="text" 
       placeholder="Chercher..." 
-      :value="modelValue"
-      @input="$emit('update:modelValue', $event.target.value)"
+      :value="terms"
+      @input="$emit('update:terms', $event.target.value)"
     />
   </label>
+  <div class="filters">
+    <Checkbox
+      class="filter"
+      :value="showJokers"
+      @change="(checked) => $emit('update:showJokers', checked)"
+    >
+      Jokers
+    </Checkbox>
+    <Checkbox
+      class="filter"
+      :value="showUniques"
+      @change="(checked) => $emit('update:showUniques', checked)"
+    >
+      Ennemis uniques
+    </Checkbox>
+  </div>
 </template>
 
 <style scoped>
   .search {
     display: block;
-    margin-bottom: 2rem;
+    margin-bottom: .4rem;
     padding: 0 .6rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-gray-light);
     border-bottom-width: 3px;
     border-radius: .4rem;
     display: flex;
@@ -41,12 +68,21 @@
     transition: .4s;
   }
 
-  .icon {
+  .search .icon {
     width: 1.1em;
     padding-top: .2rem;
     margin: 0 .4rem;
     fill: #888;
     transition: .4s;
+  }
+
+  .filters {
+    margin-bottom: 2rem;
+    padding-left: .4rem;
+  }
+
+  .filter {
+    margin-right: 1rem;
   }
 
   input[type="text"] {

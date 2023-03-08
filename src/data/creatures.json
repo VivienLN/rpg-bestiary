@@ -116,7 +116,7 @@
     "edges": [
       ["Sans peur", "Immunisé à Terreur et Intimidation"],
       ["Esprit", "Ne respire pas, immunisé aux poisons et aux maladies"],
-      ["Vol", "Peut atteindre des lieux en hauteur"]
+      ["Vol", "Peut se déplacer normalement dans les airs"]
     ],
     "melee": [
       ["Coup de bec", "Combat d4, 2d4"]
@@ -344,8 +344,8 @@
     ],
     "magic": [
       ["Convocation d'esprit du Babouin", "Réussit toujours. Convoque [[Esprit du Titan Babouin (Zimachi)]]."],
-      ["Dague spirituelle", "Magie d10, 2d6 dégâts"],
-      ["Guérison", "Magie d10, Soigne 1 blessure < 1h"]
+      ["Dague spirituelle", "Magie d10, distance, 2d6 dégâts"],
+      ["Guérison", "Magie d10, contact, Soigne 1 blessure < 1h"]
     ]
   },
   {
@@ -414,7 +414,7 @@
       ["Balayage de queue", "Combat d6-2, d12"]
     ],
     "magic": [
-      ["Invisibilité", "Âme d8, devient transparent mais un peu flou avec de vagues contours. Toute action à son encontre requiérant la vue se fait à -4 (-6 si prouesse). Même malus sur un jet de Perception pour s'aviser de sa présence."]
+      ["Invisibilité", "Âme d8, soi-même. Devient transparent mais un peu flou avec de vagues contours. Toute action à son encontre requiérant la vue se fait à -4 (-6 si prouesse). Même malus sur un jet de Perception pour s'aviser de sa présence."]
     ]
   },
   {
@@ -449,7 +449,37 @@
       ["Balayage de queue", "Combat d10-2, d12+2. Allonge 1."]
     ],
     "magic": [
-      ["Invisibilité", "Âme d10, devient transparent mais un peu flou avec de vagues contours. Toute action à son encontre requiérant la vue se fait à -4 (-6 si prouesse). Même malus sur un jet de Perception pour s'aviser de sa présence."]
+      ["Invisibilité", "Âme d10, soi-même. Devient transparent mais un peu flou avec de vagues contours. Toute action à son encontre requiérant la vue se fait à -4 (-6 si prouesse). Même malus sur un jet de Perception pour s'aviser de sa présence."]
+    ]
+  },
+  {
+    "name": "Petit dracoléon",
+    "image": "https://cdnb.artstation.com/p/assets/images/images/028/501/015/large/jessica-faucher-wip04.jpg?1594664547",
+    "agi": 8,
+    "spi": 8,
+    "str": 1,
+    "sma": 10,
+    "vig": 4,
+    "pace": 5,
+    "parry": 2,
+    "toughness": {"total": 2, "armor": 0},
+    "skills": [
+      ["Athlétisme", 8],
+      ["Magie", 10],
+      ["Discrétion", 12],
+      ["Perception", 10]
+    ],
+    "hindrances": [
+      ["Peureux", "Ne combat qu'avec d'autres. S'enfuit le cas échéant."]
+    ],
+    "edges": [
+      ["Taille -3", "Mesure une trentaine de centimètres"],
+      ["Vol", "Peut se déplacer normalement dans les airs"]
+    ],
+    "magic": [
+      ["Invisibilité", "Âme d8, soi-même. Devient transparent mais un peu flou avec de vagues contours. Toute action à son encontre requiérant la vue se fait à -4 (-6 si prouesse). Même malus sur un jet de Perception pour s'aviser de sa présence."],
+      ["Protection", "Magie d10, une cible. Confère armure +2."],
+      ["Croissance", "Magie d10, une cible. Taille +2, augmente la force de 2d et la résistance de 2."]
     ]
   }
 ]
