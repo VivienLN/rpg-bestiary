@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/rpg-bestiary/",
   plugins: [vue()],
   resolve: {
     alias: {
@@ -12,7 +13,6 @@ export default defineConfig({
     }
   },
   server: {
-    base: process.env.NODE_ENV === "production" ? "/rpg-bestiary/" : "/",
     host: true,
     port: 3000,
     watch: {

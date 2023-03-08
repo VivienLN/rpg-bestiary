@@ -7,7 +7,6 @@ This template should help get you started developing with Vue 3 in Vite.
 docker-compose run app npm run build
 git subtree push --prefix dist origin gh-pages
 ```
-* [Tutorial](https://learnvue.co/articles/deploy-vue-to-github-pages)
 * [Subtree basics](https://gist.github.com/SKempin/b7857a6ff6bddb05717cc17a44091202)
 
 ## Recommended IDE Setup
