@@ -93,7 +93,6 @@
     font-family: inherit;
     font-size: inherit;
     line-height: 1;
-    font-weight: bold;
   }
 
   .search:focus-within {
