@@ -12,6 +12,7 @@ export default defineConfig({
     }
   },
   server: {
+    base: process.env.NODE_ENV === "production" ? "/rpg-bestiary/" : "/",
     host: true,
     port: 3000,
     watch: {
