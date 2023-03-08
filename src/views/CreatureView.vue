@@ -1,5 +1,5 @@
 <script setup>
-  import { computed } from 'vue'
+  import { computed, Transition } from 'vue'
   import { useRoute } from 'vue-router'
   import { slugify, toDiceNotation } from '../helpers.js'
   import ComputedText from '../components/ComputedText.vue'
@@ -48,22 +48,28 @@
 <template>
   <div :class="{ unique: creature.unique }">
     <h1 :class="{ joker: creature.joker }">
-      <IconSkull v-if="creature.joker" class="icon icon-joker" />
+      <Transition name="icon">
+        <IconSkull v-if="creature.joker" class="icon icon-joker" />
+      </Transition>
       <span>
         {{ creature.name }}
       </span>
       <span class="hearts">
-        <IconHeart v-for="i in creature.hearts" :key="i" class="icon icon-heart" />
+        <TransitionGroup name="icon">
+          <IconHeart v-for="i in creature.hearts" :key="i" class="icon icon-heart" />
+        </TransitionGroup>
       </span>
     </h1>
-    <div class="block block-toughness">
+
+    <div class="block block-toughness" :key="slug">
       <h3 class="inline">Rés.&nbsp;:</h3>
       <span>
         {{ creature.toughness.total }} 
         {{ creature.toughness.armor ? `(${creature.toughness.armor})` : "" }}
       </span>
     </div>
-    <ul class="block block-attributes">
+
+    <ul class="block block-attributes" :key="slug">
       <li><h3>Agi</h3><span>{{ toDiceNotation(creature.agi || 4) }}</span></li>
       <li><h3>Âme</h3><span>{{ toDiceNotation(creature.spi || 4) }}</span></li>
       <li><h3>For</h3><span>{{ toDiceNotation(creature.str || 4) }}</span></li>
@@ -72,23 +78,29 @@
       <li><h3>Allure</h3><span>{{ creature.pace || 6 }}</span></li>
       <li><h3>Parade</h3><span>{{ creature.parry }}</span></li>
     </ul>
-    <div class="skills">
-      <h3 class="inline">Compétences&nbsp;:</h3>
-      {{ creature.skills.map(s => `${s[0]}&nbsp;${toDiceNotation(s[1])}`).join(', ') }}
-    </div>
-    <ul class="details">
-      <li v-for="(d, i) in details" :key="i" :class="d.type">
-        <h4 class="inline">
-          <IconSword v-if="d.type=='melee'" class="icon" />
-          <IconBow v-if="d.type=='ranged'" class="icon" />
-          <IconBolt v-if="d.type=='magic'" class="icon" />
-          <IconStar v-if="d.type=='edge'" class="icon" />
-          <IconStar v-if="d.type=='hindrance'" class="icon" />
-          {{ d.name }}{{ d.description ? "&nbsp;:" : "" }}
-        </h4>
-        <computed-text :text="d.description" />
-      </li>
-    </ul>
+
+    <Transition name="slide" mode="out-in" :duration="400">
+      <div class="skills" :key="slug">
+        <h3 class="inline">Compétences&nbsp;:</h3>
+        {{ creature.skills.map(s => `${s[0]}&nbsp;${toDiceNotation(s[1])}`).join(', ') }}
+      </div>
+    </Transition>
+
+    <Transition name="slide" mode="out-in" :duration="400">
+      <ul class="details" :key="slug">
+        <li v-for="(d, i) in details" :key="i" :class="d.type">
+          <h4 class="inline">
+            <IconSword v-if="d.type=='melee'" class="icon" />
+            <IconBow v-if="d.type=='ranged'" class="icon" />
+            <IconBolt v-if="d.type=='magic'" class="icon" />
+            <IconStar v-if="d.type=='edge'" class="icon" />
+            <IconStar v-if="d.type=='hindrance'" class="icon" />
+            {{ d.name }}{{ d.description ? "&nbsp;:" : "" }}
+          </h4>
+          <computed-text :text="d.description" />
+        </li>
+      </ul>
+    </Transition>
   </div>
 </template>
 
@@ -106,6 +118,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    transition: .3s;
   }
   h1.joker {
     padding-left: 3.2rem;
@@ -117,6 +130,7 @@
     flex-grow: 1;
     text-align: right;
     white-space: nowrap;
+    direction: rtl; /* reverse order form animation */
   }
   h1 .icon-heart {
     fill: #fff;
@@ -219,5 +233,41 @@
   .unique h1 {
     background: linear-gradient(165deg, var(--color-unique) 20%, var(--color-unique-2) 100%);
   }
+
+  .icon-enter-active,
+  .icon-leave-active {
+    transition: all .3s ease-in-out;
+  }
+
+  .icon-enter-from,
+  .icon-leave-to {
+    opacity: 0;
+    transform: scale(.6, .6);
+  }
+
+  .slide-leave-active {
+    transition: all .3s ease-out;
+  }
+
+  .slide-leave-to {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  
+  .slide-enter-active {
+    transition: all .3s ease-out;
+  }
+
+  .slide-enter-from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  .slide-leave-active.details { transition-delay: .1s; }
+  /* h1.v-leave-active { transition-delay: 0; }
+  .block-toughness.v-leave-active { transition-delay: .1s; }
+  .block-attributes.v-leave-active { transition-delay: .2s; }
+  .skills.v-leave-active { transition-delay: .3s; }
+  .details.v-leave-active { transition-delay: .4s; } */
 
 </style>
