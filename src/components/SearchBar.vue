@@ -57,7 +57,6 @@
     font-family: inherit;
     font-size: inherit;
     line-height: 1;
-    /* color: var(--color-primary); */
     font-weight: bold;
   }
 

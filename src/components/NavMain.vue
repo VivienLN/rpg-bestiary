@@ -124,12 +124,12 @@
     top: -.1rem;
   }
   a:hover {
-    background: #eee;
+    background: var(--color-gray-light);
     transition: .2s;
   }
   a.router-link-active {
     font-weight: bold;
-    background: #eee;
+    background: var(--color-gray-light);
     color: var(--color-primary);
   }
   a.router-link-active svg {
@@ -153,7 +153,7 @@
     .nav-main {
       padding-right: 1rem;
       margin-right: 1rem;
-      border-right: 1px solid #eee;
+      border-right: 1px solid var(--color-gray-light);
       margin-bottom: 0;
       max-height: none;
       overflow-y: visible;
