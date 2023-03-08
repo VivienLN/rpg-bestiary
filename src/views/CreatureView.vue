@@ -79,14 +79,14 @@
       <li><h3>Parade</h3><span>{{ creature.parry }}</span></li>
     </ul>
 
-    <Transition name="slide" mode="out-in" :duration="400">
+    <Transition name="slide" mode="out-in" :duration="400" appear>
       <div class="skills" :key="slug">
         <h3 class="inline">Compétences&nbsp;:</h3>
         {{ creature.skills.map(s => `${s[0]}&nbsp;${toDiceNotation(s[1])}`).join(', ') }}
       </div>
     </Transition>
 
-    <Transition name="slide" mode="out-in" :duration="400">
+    <Transition name="slide" mode="out-in" :duration="400" appear>
       <ul class="details" :key="slug">
         <li v-for="(d, i) in details" :key="i" :class="d.type">
           <h4 class="inline">
@@ -112,13 +112,13 @@
     margin-bottom: .4rem;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1.25em;
     letter-spacing: -.02em;
     font-weight: bold;
     position: relative;
     display: flex;
     justify-content: space-between;
-    transition: .3s;
+    transition: .4s;
   }
   h1.joker {
     padding-left: 3.2rem;
@@ -135,7 +135,9 @@
   h1 .icon-heart {
     fill: #fff;
     margin-left: .4rem;
-    height: .8em;
+    margin-top: -.1em;
+    margin-bottom: -.1em;
+    height: .9em;
   }
   h1 .icon-joker {
     height: 2.8rem;
@@ -236,7 +238,7 @@
 
   .icon-enter-active,
   .icon-leave-active {
-    transition: all .3s ease-in-out;
+    transition: all .4s ease-in-out;
   }
 
   .icon-enter-from,
@@ -251,7 +253,7 @@
 
   .slide-leave-to {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-18px);
   }
   
   .slide-enter-active {
@@ -260,9 +262,10 @@
 
   .slide-enter-from {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-18px);
   }
 
+  .slide-enter-active.details,
   .slide-leave-active.details { transition-delay: .1s; }
   /* h1.v-leave-active { transition-delay: 0; }
   .block-toughness.v-leave-active { transition-delay: .1s; }
