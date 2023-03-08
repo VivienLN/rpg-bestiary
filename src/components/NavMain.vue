@@ -90,7 +90,7 @@
 <style scoped>
   .nav-main {
     margin-bottom: 2rem;
-    max-height: 25vh;
+    height: 25vh;
     overflow-y: auto;
   }
   .nav-main--wrapper {
@@ -155,7 +155,7 @@
       margin-right: 1rem;
       border-right: 1px solid var(--color-gray-light);
       margin-bottom: 0;
-      max-height: none;
+      height: 100%;
       overflow-y: visible;
     }
   }

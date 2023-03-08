@@ -102,6 +102,7 @@
   },
   {
     "name": "Esprit de la Mouette",
+    "image": "http://3.bp.blogspot.com/-yZEf8BjmLQc/TvocS9z4WCI/AAAAAAAACXM/xYd5RPiVgUU/s640/Seagull+MONTLLO.jpg",
     "pace": 4,
     "parry": 4,
     "toughness": {"total": 3, "armor": 0},
@@ -122,6 +123,7 @@
   },
   {
     "name": "Esprit tentaculeur",
+    "image": "https://i.pinimg.com/originals/7a/e4/8a/7ae48ab3826c12f4d773581151537909.jpg",
     "str": 6,
     "pace": 0,
     "parry": 4,
@@ -143,6 +145,7 @@
   },
   {
     "name": "Gorog",
+    "image": "https://angrygolem-games.com/wp-content/uploads/2022/01/Grung.jpg",
     "agi": 6,
     "parry": 5,
     "toughness": {"total": 3, "armor": 1},
@@ -175,6 +178,7 @@
   },
   {
     "name": "Doyen Gorog",
+    "image": "https://i.pinimg.com/564x/52/e6/97/52e697477f65582b551d5f5f0f7afa19.jpg",
     "agi": 10,
     "str": 6,
     "pace": 7,
@@ -209,6 +213,7 @@
   },
   {
     "name": "Gorog des Marais",
+    "image": "https://www.aidedd.org/dnd/images/bullywug.jpg",
     "agi": 6,
     "str": 6,
     "parry": 4,
@@ -243,6 +248,7 @@
     "name": "Mycomancien Gorog",
     "joker": false,
     "hearts": 0,
+    "image": "https://cdna.artstation.com/p/assets/images/images/050/865/596/large/heidi-van-lee-frog-frog-frogyfghgjjh.jpg?1655883579",
     "agi": 6,
     "spi": 4,
     "str": 6,
@@ -284,6 +290,7 @@
   },
   {
     "name": "Moisissure vivante",
+    "image": "https://64.media.tumblr.com/64e2bc27bba47d10805cddb56c94a962/tumblr_mjx8qr2Sry1rtdsh3o6_1280.jpg",
     "pace": 5,
     "parry": 5,
     "toughness": {"total": 5, "armor": 0},
@@ -342,6 +349,7 @@
   },
   {
     "name": "Esprit du Titan Babouin (Zimachi)",
+    "image": "https://i.pinimg.com/originals/29/0f/a9/290fa9aed14c6d23429768f0442ce6e9.jpg",
     "unique": true,
     "hearts": 1,
     "agi": 6,

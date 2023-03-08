@@ -3,6 +3,7 @@
   import { useRoute } from 'vue-router'
   import { slugify, toDiceNotation } from '../helpers.js'
   import ComputedText from '../components/ComputedText.vue'
+  import CreatureImage from '../components/CreatureImage.vue'
   import IconSword from '../components/icons/IconSword.vue'
   import IconBolt from '../components/icons/IconBolt.vue'
   import IconBow from '../components/icons/IconBow.vue'
@@ -110,6 +111,12 @@
           <computed-text :text="d.description" />
         </li>
       </ul>
+    </Transition>
+
+    <Transition name="slide" mode="out-in" :duration="400" appear>
+      <div class="image" :key="slug">
+        <CreatureImage :src="creature.image" v-if="creature.image" />
+      </div>
     </Transition>
   </div>
 </template>
@@ -238,6 +245,13 @@
     font-weight: bold;
   }
 
+  .image {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
+  }
+
   .unique h1 .icon-joker {
     filter: drop-shadow(-1px -1px 0 var(--color-unique))
             drop-shadow(0 -1px 0 var(--color-unique))
@@ -298,11 +312,11 @@
   }
 
   .slide-enter-active.details,
+  .slide-appear-active.details,
   .slide-leave-active.details { transition-delay: .1s; }
-  /* h1.v-leave-active { transition-delay: 0; }
-  .block-toughness.v-leave-active { transition-delay: .1s; }
-  .block-attributes.v-leave-active { transition-delay: .2s; }
-  .skills.v-leave-active { transition-delay: .3s; }
-  .details.v-leave-active { transition-delay: .4s; } */
+
+  .slide-enter-active.image,
+  .slide-appear-active.image { transition-delay: .2s; }
+  .slide-leave-active.image { transition-delay: 0s; }
 
 </style>
