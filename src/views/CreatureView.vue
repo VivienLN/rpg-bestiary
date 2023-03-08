@@ -1,5 +1,5 @@
 <script setup>
-  import { inject, computed, ref, reactive, onMounted } from 'vue'
+  import { computed } from 'vue'
   import { useRoute } from 'vue-router'
   import { slugify, toDiceNotation } from '../helpers.js'
   import ComputedText from '../components/ComputedText.vue'

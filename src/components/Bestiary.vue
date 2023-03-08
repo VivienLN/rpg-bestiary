@@ -1,6 +1,6 @@
 <script setup>
   import { RouterLink, RouterView, useRoute } from 'vue-router'
-  import { ref, computed, inject, onMounted, provide } from 'vue'
+  import { ref, computed } from 'vue'
   import NavMain from './NavMain.vue'
   import SearchBar from './SearchBar.vue'
   import FuzzySet from 'fuzzyset'
