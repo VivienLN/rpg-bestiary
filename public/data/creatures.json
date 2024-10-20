@@ -1,7 +1,7 @@
 [
   {
     "name": "Piquier Gorog",
-	"image": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8f/Bullywug-5e.jpg/revision/latest?cb=20161119174933",
+	"image": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8f/Bullywug-5e.jpg",
     "hearts": 0,
     "agi": 8,
     "spi": 4,
@@ -12,15 +12,14 @@
     "toughness": {"total": 4, "armor": 0},
     "skills": [
       ["Combat", 6],
-      ["Perception", 6],
-      ["Athlétisme", 8],
-      ["Survie", 10]
+      ["Athlétisme", 8]
     ],
     "hindrances": [
       ["Frêle", "Résistance -1"]
     ],
     "edges": [
-      ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."]
+      ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
+	  ["Immunité aux poisons"]
     ],
     "melee": [
       ["Epieu", "Combat d6, 2d6 dégats, PA 2, Allonge +1. Deux mains."],
@@ -31,7 +30,7 @@
   },
   {
     "name": "Chasseur Gorog",
-	"image": "https://static.wikia.nocookie.net/aurelius/images/a/af/Grung.jpg/revision/latest?cb=20220921020906",
+	"image": "https://static.wikia.nocookie.net/aurelius/images/a/af/Grung.jpg/revision",
     "hearts": 0,
     "agi": 8,
     "spi": 6,
@@ -51,7 +50,8 @@
       ["Frêle", "Résistance -1"]
     ],
     "edges": [
-      ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."]
+      ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
+	  ["Immunité aux poisons"]
     ],
     "melee": [
       ["Couteau", "Combat d4, 2d4 dégats."],
@@ -70,18 +70,18 @@
     "sma": 6,
     "vig": 10,
     "parry": 7,
+    "pace": 5,
     "toughness": {"total": 6, "armor": 0},
     "skills": [
       ["Performance", 8],
-      ["Combat", 8],
-      ["Perception", 8],
-      ["Athlétisme", 2],
-      ["Survie", 8]
+      ["Combat", 8]
     ],
     "hindrances": [
       ["Tambour", "Attaché à la ceinture du tambourineur, il le protège mais l'empêche de sauter aussi haut que ses congénères, et réduit sa vitesse. Parade +1, Allure -1."]
     ],
-    "edges": [],
+    "edges": [
+	  ["Immunité aux poisons"]
+	],
     "melee": [
       ["Massue", "Combat d8, d8+d6 dégats."],
       ["Coup de langue", "Combat d8, d8+d4 dégats, Allonge 3. Arme naturelle."]
@@ -113,7 +113,8 @@
     "hindrances": [],
     "edges": [
       ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
-      ["Familier", "Accompagné d'un Scarabourgeon."]
+      ["Familier", "Accompagné d'une Phalène radieuse."],
+	  ["Immunité aux poisons"]
     ],
     "melee": [
       ["Couteau", "Combat d6, d6+d4 dégats."],
@@ -135,6 +136,7 @@
     "sma": 8,
     "vig": 8,
     "parry": 7,
+    "pace": 7,
     "toughness": {"total": 7, "armor": 1},
     "skills": [
       ["Combat", 8],
@@ -147,7 +149,8 @@
     "edges": [
       ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
       ["Rapide", "Allure +1."],
-      ["Armure rudimentaire", "Armure +1."]
+      ["Armure rudimentaire", "Armure +1."],
+	  ["Immunité aux poisons"]
     ],
     "melee": [
       ["Lance", "Combat d8, d8+d6 dégats. Parade +1, Allonge 1, nécessite 2 mains."],
@@ -180,7 +183,8 @@
     "edges": [
       ["Monture", "Tigrours ardent. Tant qu'il est dessus, bénéficie de Allure +2. Les deux n'agissent pas en même temps. Au corps à corps, il faut d'abord tuer la monture ou faire tomber le Seigneur Gorog, pour l'atteindre"],
       ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
-      ["Armure rudimentaire", "Armure +1."]
+      ["Armure rudimentaire", "Armure +1."],
+	  ["Immunité aux poisons"]
     ],
     "melee": [
       ["Lance", "Combat d8, d8+d6 dégats. Parade +1, Allonge 1, nécessite 2 mains."],
@@ -193,208 +197,65 @@
     ]
   },
   {
-    "name": "Squalide (Guerrier)",
-    "hearts": 2,
-    "agi": 10,
+    "name": "Phalène radieuse",
+	"image": "https://i.imgur.com/ixZyDbA.jpeg",
+    "hearts": 0,
+    "agi": 6,
     "spi": 6,
-    "str": 12,
-    "sma": 4,
-    "vig": 8,
-    "parry": 7,
-    "toughness": {"total": 9, "armor": 2},
-    "skills": [
-      ["Perception", 8],
-      ["Combat", 10],
-      ["Athlétisme", 4],
-      ["Culture générale", 4],
-      ["Discrétion", 6],
-      ["Persuasion", 8],
-      ["Provocation", 8],
-      ["Survie", 10],
-      ["Tir", 4],
-      ["Intimidation", 6]
-    ],
-    "hindrances": [
-      ["Dépendance (eau)"],
-      ["Arrogant", "Aime dominer son opposant, confronte l'adversaire le plus puissant au combat."]
-    ],
-    "edges": [
-      ["Aquatique", "Ne peut se noyer et se déplace à son allure lorsqu'il nage."],
-      ["Balaise", "Résistance +1"]
-    ],
-    "melee": [
-      ["Morsure", "Combat d10, d10+d4 dégats (la victime doit d'abord avoir été empoignée)"],
-      ["Epée à deux mains", "Combat d10 (balayage : d10-2), 2d10. Deux mains."],
-      ["Marteau de guerre", "Combat d10 (balayage : d10-2), d10+d6. PA 1."]
-    ],
-    "ranged": [
-      ["Pistolet", "Tir d4, 5/10/20, 2d6+1"]
-    ]
-  },
-  {
-    "name": "Squalide (Shaman)",
-    "hearts": 2,
-    "agi": 4,
-    "spi": 8,
     "str": 6,
-    "sma": 10,
+    "sma": 6,
     "vig": 6,
     "parry": 5,
-    "toughness": {"total": 7, "armor": 1},
+    "toughness": {"total": 5, "armor": 0},
     "skills": [
-      ["Perception", 12],
       ["Combat", 6],
-      ["Athlétisme", 4],
-      ["Culture générale", 10],
-      ["Education", 6],
-      ["Discrétion", 6],
-      ["Persuasion", 10],
-      ["Provocation", 6],
-      ["Survie", 8],
-      ["Tir", 4],
-      ["Magie", 12]
+      ["Perception", 10],
+	  ["Arcanes", 6],
     ],
     "hindrances": [
-      ["Dépendance (eau)"],
-      ["Arrogant", "Aime dominer son opposant, confronte l'adversaire le plus puissant au combat."]
+      ["Faiblesse (feu)", "Le feu inflige +4 dommages à la créature."]
     ],
     "edges": [
-      ["Aquatique", "Ne peut se noyer et se déplace à son allure lorsqu'il nage."],
-      ["Balaise", "Résistance +1"]
+      ["Infravision", "Réduit de moitié les malus liés à la visibilité lorsqu’il souhaite attaquer des créatures qui dégagent de la chaleur (y compris celles invisibles)."]
     ],
     "melee": [
-      ["Morsure", "Combat d6, d6+d4 dégats (la victime doit d'abord avoir été empoignée)"],
-      ["Bâton", "Combat d6 (balayage : d6-2), d6=d4. Allonge 1, deux mains, Parade +1."]
+      ["Morsure", "Combat d6, d6+d4 dégats. Arme naturelle."]
     ],
     "magic": [
-      ["Lame de vent", "Magie d12, distance, 2d6 dégâts"],
-      ["Guérison", "Magie d12, contact, soigne 1 blessure < 1h"],
-      ["Convocation d'esprit du Ragondin", "Magie d12, convoque 1 [[Esprit du Ragondin]]"]
-    ]
+	  ["Lumière", "Emet de la lumière avec ses antennes sur 10m à la ronde (action gratuite)"],
+	  ["Éblouissement", "Arcanes d6, Emet une lumière aveuglante dans un petit cône, les victimes subissent -2 [-4] à leurs actions utilisant la vue."]
+	]
   },
   {
-    "name": "Squalide (Guerrier) (Joker)",
-    "hearts": 3,
-    "joker": true,
-    "agi": 10,
-    "spi": 6,
-    "str": 13,
-    "sma": 4,
-    "vig": 12,
-    "parry": 8,
-    "toughness": {"total": 13, "armor": 4},
-    "skills": [
-      ["Perception", 8],
-      ["Combat", 12],
-      ["Athlétisme", 8],
-      ["Culture générale", 4],
-      ["Discrétion", 8],
-      ["Persuasion", 8],
-      ["Provocation", 8],
-      ["Survie", 10],
-      ["Tir", 8],
-      ["Intimidation", 10]
-    ],
-    "hindrances": [
-      ["Dépendance (eau)"],
-      ["Arrogant", "Aime dominer son opposant, confronte l'adversaire le plus puissant au combat."]
-    ],
-    "edges": [
-      ["Aquatique", "Ne peut se noyer et se déplace à son allure lorsqu'il nage."],
-      ["Balaise", "Résistance +1"]
-    ],
-    "melee": [
-      ["Morsure", "Combat d12, d12+d4+1 dégats (la victime doit d'abord avoir été empoignée)"],
-      ["Epée à deux mains", "Combat d12 (balayage : d12-2), d12+d10+1. Deux mains."],
-      ["Marteau de guerre", "Combat d12 (balayage : d12-2), d12+d6+1. PA 1."]
-    ],
-    "ranged": [
-      ["Pistolet", "Tir d8, 5/10/20, 2d6+1"]
-    ]
-  },
-  {
-    "name": "Squalide (Shaman) (Joker)",
-    "hearts": 3,
-    "joker": true,
+    "name": "Tigrours ardent",
+	"image": "https://i.imgur.com/DFcMAFK.jpeg",
+    "hearts": 0,
     "agi": 8,
-    "spi": 10,
-    "str": 8,
-    "sma": 12,
-    "vig": 10,
+    "spi": 6,
+    "str": 10,
+    "sma": 8,
+    "vig": 8,
     "parry": 6,
-    "toughness": {"total": 9, "armor": 2},
+    "toughness": {"total": 7, "armor": 0},
     "skills": [
-      ["Perception", 12],
+      ["Athlétisme", 8],
       ["Combat", 8],
-      ["Athlétisme", 6],
-      ["Culture générale", 12],
-      ["Education", 10],
-      ["Discrétion", 10],
-      ["Persuasion", 12],
-      ["Provocation", 6],
-      ["Survie", 8],
-      ["Tir", 6],
-      ["Magie", 14]
+      ["Perception", 8],
+      ["Discrétion", 8],
     ],
     "hindrances": [
-      ["Dépendance (eau)"],
-      ["Arrogant", "Aime dominer son opposant, confronte l'adversaire le plus puissant au combat."]
+      ["Faiblesse (glace et eau)", "La glace et l'eau inflige +4 dommages à la créature."],
+      ["Point faible (queue)", "Si les flammes de sa queue sont éteintes, est automatiquement secoué."],
+      ["Phobie (eau)", "N'ira pas dans l'eau."],
     ],
     "edges": [
-      ["Aquatique", "Ne peut se noyer et se déplace à son allure lorsqu'il nage."],
-      ["Balaise", "Résistance +1"]
-    ],
+	  ["Vision nocturne", "Ignore les malus de pénombre et d'obscurité"],
+	  ["Taille 2", "Résistance et taille +1"],
+	  ["Corps ardent", "Ses griffes et sa gueule incandescents infligent des dommages de feu."],
+	],
     "melee": [
-      ["Morsure", "Combat d8, d8+d4 dégats (la victime doit d'abord avoir été empoignée)"],
-      ["Bâton", "Combat d8 (balayage : d8-2), d8+d4. Allonge 1, deux mains, Parade +1."]
-    ],
-    "magic": [
-      ["Lame de vent supérieure", "Magie d12+2, distance, 2d6+2 dégâts"],
-      ["Guérison", "Magie d12+2, contact, soigne 1 blessure < 1h"],
-      ["Convocation d'esprit du Ragondin x2", "Magie d12+2, convoque 2 [[Esprit du Ragondin]]"]
-    ]
-  },
-  {
-    "name": "Esprit du Ragondin",
-    "image": "https://www.larousse.fr/encyclopedie/data/images/1005747-Ragondin.jpg",
-    "pace": 4,
-    "parry": 4,
-    "toughness": {"total": 4, "armor": 0},
-    "skills": [
-      ["Athlétisme", 6],
-      ["Combat", 4],
-      ["Discrétion", 4],
-      ["Perception", 4]
-    ],
-    "edges": [
-      ["Sans peur", "Immunisé à Terreur et Intimidation"],
-      ["Esprit", "Ne respire pas, immunisé aux poisons et aux maladies"],
-      ["Enfouissement", "Règles habituelles, cf. p. 176"]
-    ],
-    "melee": [
-      ["Morsure", "Combat d4, 2d4 dégats (la victime doit d'abord avoir été empoignée)"],
-      ["Griffes", "Combat d4, 2d4"]
-    ]
-  },
-  {
-    "name": "Esprit de la Mouette",
-    "image": "http://3.bp.blogspot.com/-yZEf8BjmLQc/TvocS9z4WCI/AAAAAAAACXM/xYd5RPiVgUU/s640/Seagull+MONTLLO.jpg",
-    "pace": 4,
-    "parry": 4,
-    "toughness": {"total": 3, "armor": 0},
-    "skills": [
-      ["Athlétisme", 6],
-      ["Combat", 4],
-      ["Discrétion", 4],
-      ["Perception", 6]
-    ],
-    "edges": [
-      ["Sans peur", "Immunisé à Terreur et Intimidation"],
-      ["Esprit", "Ne respire pas, immunisé aux poisons et aux maladies"],
-      ["Vol", "Peut se déplacer normalement dans les airs"]
-    ],
-    "melee": [
-      ["Coup de bec", "Combat d4, 2d4"]
+      ["Morsure", "Combat d8, d8+d6 dégats. Dommages de feu (pas de brûlure)."],
+      ["Balayage de griffe", "Combat d8-2, d8+d6 dégats. Dommages de feu (pas de brûlure)."],
     ]
   },
   {
@@ -417,107 +278,6 @@
     "melee": [
       ["Surgissement", "Sort de terre et attaque immédiatement par surprise. La cible doit réussir un jet de perception, sinon l'esprit a +2 au jets d'attaques et de dégâts durant 1 round."],
       ["Coup", "Combat d4 (Balayage : d4-2), d4+d6. Rappel : Allonge +2."]
-    ]
-  },
-  {
-    "name": "Gorog",
-    "image": "https://angrygolem-games.com/wp-content/uploads/2022/01/Grung.jpg",
-    "agi": 6,
-    "parry": 5,
-    "toughness": {"total": 3, "armor": 1},
-    "skills": [
-      ["Athlétisme", 8],
-      ["Combat", 10],
-      ["Culture générale", 4],
-      ["Discrétion", 6],
-      ["Perception", 4],
-      ["Persuasion", 4],
-      ["Soins", 4],
-      ["Survie", 4],
-      ["Tir", 6]
-    ],
-    "hindrances": [
-      ["Taille -1", "Résistance -1"]
-    ],
-    "edges": [
-      ["Bond", "+4 aux dégats lorsqu'il bondit pour faire une attaque totale. Peut sauter 2x plus haut et plus loin."],
-      ["Semi-aquatique", "Tient 15mn en apnée"],
-      ["Contact empoisonné", "Attaque pour toucher (p. 100), ou si contact, la victime doit réussir un jet de vigueur ou subir un poison modéré"]
-    ],
-    "melee": [
-      ["Epieu court", "Combat d4, 2d4"],
-      ["Balayage", "Combat d4-2, 2d4"]
-    ],
-    "ranged": [
-      ["Arbalète légère", "Tir d6, 10/20/40, 2d6"]
-    ]
-  },
-  {
-    "name": "Doyen Gorog",
-    "image": "https://i.pinimg.com/564x/52/e6/97/52e697477f65582b551d5f5f0f7afa19.jpg",
-    "agi": 10,
-    "str": 6,
-    "pace": 7,
-    "parry": 5,
-    "toughness": {"total": 6, "armor": 2},
-    "skills": [
-      ["Athlétisme", 12],
-      ["Combat", 8],
-      ["Culture générale", 4],
-      ["Discrétion", 10],
-      ["Perception", 8],
-      ["Persuasion", 4],
-      ["Soins", 6],
-      ["Survie", 10],
-      ["Tir", 8]
-    ],
-    "hindrances": [
-      ["Taille -1", "Résistance -1"]
-    ],
-    "edges": [
-      ["Bond", "+4 aux dégats lorsqu'il bondit pour faire une attaque totale. Peut sauter 2x plus haut et plus loin."],
-      ["Semi-aquatique", "Tient 15mn en apnée"],
-      ["Contact empoisonné", "Attaque pour toucher (p. 100), ou si contact, la victime doit réussir un jet de vigueur ou subir un poison modéré."]
-    ],
-    "melee": [
-      ["Lance", "Combat d8, 2d6 ; Allonge +1, Parade +1 si utilisé à deux mains."],
-      ["Balayage", "Combat d8-2, 2d6"]
-    ],
-    "ranged": [
-      ["Arbalète légère", "Tir d8, 10/20/40, 2d6"]
-    ]
-  },
-  {
-    "name": "Gorog des Marais",
-    "image": "https://www.aidedd.org/dnd/images/bullywug.jpg",
-    "agi": 6,
-    "str": 6,
-    "parry": 4,
-    "toughness": {"total": 3, "armor": 1},
-    "skills": [
-      ["Athlétisme", 6],
-      ["Combat", 4],
-      ["Discrétion", 6],
-      ["Perception", 4],
-      ["Persuasion", 4],
-      ["Soins", 4],
-      ["Survie", 4],
-      ["Tir", 6]
-    ],
-    "hindrances": [
-      ["Taille -1", "Résistance -1"]
-    ],
-    "edges": [
-      ["Bond", "+4 aux dégats lorsqu'il bondit pour faire une attaque totale. Peut sauter 2x plus haut et plus loin."],
-      ["Semi-aquatique", "Tient 15mn en apnée"],
-      ["Contact empoisonné", "Attaque pour toucher (p. 100), ou si contact, la victime doit réussir un jet de vigueur ou subir un poison modéré."]
-    ],
-    "melee": [
-      ["Epieu court", "Combat d4, d6+d4"],
-      ["Balayage", "Combat d4-2, d6+d4"]
-    ],
-    "ranged": [
-      ["Arbalète légère", "Tir d6, 10/20/40, 2d6"]
     ]
   },
   {
