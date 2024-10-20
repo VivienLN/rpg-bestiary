@@ -25,7 +25,7 @@
     "melee": [
       ["Epieu", "Combat d6, 2d6 dégats, PA 2, Allonge +1. Deux mains."],
       ["Epieu (balayage)", "Combat d6-2, 2d6 dégats. Deux mains."],
-      ["Coup de langue", "Combat d6, d6+d4 dégats, Allonge +3. Arme naturelle."],
+      ["Coup de langue", "Combat d6, d6+d4 dégats, Allonge +3. Arme naturelle."]
     ],
     "ranged": []
   },
@@ -147,12 +147,12 @@
     "edges": [
       ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
       ["Rapide", "Allure +1."],
-      ["Armure rudimentaire", "Armure +1."],
+      ["Armure rudimentaire", "Armure +1."]
     ],
     "melee": [
       ["Lance", "Combat d8, d8+d6 dégats. Parade +1, Allonge 1, nécessite 2 mains."],
       ["Lance (balayage)", "Combat d8-2, d8+d6 dégats. Nécessite 2 mains."],
-      ["Dague empoisonnée", "Combat d8, d8+d4 dégats. Inflige Poison : si touchée, la cible doit réussir un jet de Vigueur-2 sous peine d'être Distrait et de subir 1 niveau de Fatigue (2 si échec critique), sans toute fois pouvoir en être incapacité."]
+      ["Dague empoisonnée", "Combat d8, d8+d4 dégats. Inflige Poison : si touchée, la cible doit réussir un jet de Vigueur-2 sous peine d'être Distrait et de subir 1 niveau de Fatigue (2 si échec critique), sans toute fois pouvoir en être incapacité."],
       ["Coup de langue", "Combat d8, d8+d4 dégats, Allonge 3. Arme naturelle."]
     ],
     "ranged": []
@@ -180,7 +180,7 @@
     "edges": [
       ["Monture", "Tigrours ardent. Tant qu'il est dessus, bénéficie de Allure +2. Les deux n'agissent pas en même temps. Au corps à corps, il faut d'abord tuer la monture ou faire tomber le Seigneur Gorog, pour l'atteindre"],
       ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
-      ["Armure rudimentaire", "Armure +1."],
+      ["Armure rudimentaire", "Armure +1."]
     ],
     "melee": [
       ["Lance", "Combat d8, d8+d6 dégats. Parade +1, Allonge 1, nécessite 2 mains."],
@@ -189,7 +189,7 @@
     ],
     "ranged": [
       ["Arc", "Tir d10, 2d6 dégats. Portée 12/24/48."],
-      ["Flèche enflammée", "Seulement sur monture, utilise le feu du Tigrours ardent pour enflammer une flèche et la décocher. Tir d10, 2d6+2 dégats. Portée 12/24/48."],
+      ["Flèche enflammée", "Seulement sur monture, utilise le feu du Tigrours ardent pour enflammer une flèche et la décocher. Tir d10, 2d6+2 dégats. Portée 12/24/48."]
     ]
   },
   {

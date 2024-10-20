@@ -6,6 +6,13 @@ This template should help get you started developing with Vue 3 in Vite.
 ```
 docker-compose run app npm run build
 git subtree push --prefix dist origin gh-pages
+
+# If only changes are inside data (no need to build)
+cp .\public\data\creatures.json .\dist\data\creatures.json
+git add ...
+git commit ...
+git push
+git subtree push --prefix dist origin gh-pages
 ```
 * [Subtree basics](https://gist.github.com/SKempin/b7857a6ff6bddb05717cc17a44091202)
 
