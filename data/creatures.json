@@ -254,9 +254,67 @@
 	  ["Corps ardent", "Ses griffes et sa gueule incandescents infligent des dommages de feu."]
 	],
     "melee": [
-      ["Morsure", "Combat d8, d8+d6 dégats. Dommages de feu (pas de brûlure)."],
-      ["Balayage de griffe", "Combat d8-2, d8+d6 dégats. Dommages de feu (pas de brûlure)."]
+      ["Morsure", "Combat d8, d10+d6 dégats. Dommages de feu (pas de brûlure)."],
+      ["Balayage de griffe", "Combat d8-2, d10+d6 dégats. Dommages de feu (pas de brûlure)."]
     ]
+  },
+  {
+    "name": "Fleurantule carnivore",
+	"image": "https://image.lexica.art/md2_webp/8fa63bcd-e0f1-47cd-9018-525765301a72",
+    "hearts": 0,
+    "agi": 8,
+    "spi": 4,
+    "str": 6,
+    "sma": 4,
+    "vig": 4,
+    "parry": 5,
+    "toughness": {"total": 4, "armor": 0},
+    "skills": [
+      ["Combat", 6],
+      ["Tir", 6],
+      ["Perception", 6]
+    ],
+    "hindrances": [
+      ["Faiblesse (feu)", "Le feu inflige +4 dommages à la créature."]
+    ],
+    "edges": [
+	  ["Adhérence+", "Peut se déplacer normalement sur les surfaces verticales ou les plafonds."]
+    ],
+    "melee": [
+      ["Morsure empoisonnée", "Combat d6, d6+d4 dégats. Inflige Poison : si touchée, la cible doit réussir un jet de Vigueur-2 sous peine d'être Distrait et de subir 1 niveau de Fatigue (2 si échec critique), sans toute fois pouvoir en être incapacité."]
+    ],
+    "ranged": [
+      ["Toile", "Tir d6, portée 6, cible Entravée [Immobilisée]. Toile projetée depuis le thorax."]
+	]
+  },
+  {
+    "name": "Squelette sabreur",
+	"image": "https://image.lexica.art/md2_webp/8fa63bcd-e0f1-47cd-9018-525765301a72",
+    "hearts": 0,
+    "agi": 6,
+    "spi": 6,
+    "str": 6,
+    "sma": 6,
+    "vig": 6,
+    "parry": 4,
+    "toughness": {"total": 7, "armor": 0},
+    "skills": [
+      ["Combat", 6],
+      ["Tir", 6],
+      ["Perception", 6]
+    ],
+    "hindrances": [
+      ["Maladroit", "Parade -1"]
+    ],
+    "edges": [
+      ["Mort-vivant", "Résistance +2, annuler Secoué +2, ignore 1 point de malus de Blessure, ne respire pas, immunisé aux attaques ciblées, maladies et poisons."]
+    ],
+    "melee": [
+      ["Sabre", "Combat d6, 2d6 dégats."]
+    ],
+    "ranged": [
+      ["Pistolet à silex (x2)", "Tir d6, portée 10/20/40, recharge 2, 2d6+1 dégats."]
+	]
   },
   {
     "name": "Esprit tentaculeur",
@@ -441,7 +499,7 @@
     "edges": [
       ["Taille 3", "Mesure 4m de haut et pèse environ 1 tonne."],
       ["Langue collante", "Ignore 2 points de malus d'actions multiples chaque tour."],
-      ["Adhérence", "Peut se déplacer normalement sur les surfaces verticales ou à la moitié de son allure la tête en bas"]
+      ["Adhérence", "Peut se déplacer normalement sur les surfaces verticales ou à la moitié de son allure la tête en bas."]
     ],
     "melee": [
       ["Coup de langue", "Combat d10, d12+2. Allonge 2."],
@@ -476,7 +534,7 @@
     "edges": [
       ["Taille 6", "Grand (+2). Mesure 8m de haut et pèse 8 tonnes."],
       ["Langue collante", "Ignore 2 points de malus d'actions multiples chaque tour."],
-      ["Adhérence", "Peut se déplacer normalement sur les surfaces verticales ou à la moitié de son allure la tête en bas"]
+      ["Adhérence", "Peut se déplacer normalement sur les surfaces verticales ou à la moitié de son allure la tête en bas."]
     ],
     "melee": [
       ["Coup de langue", "Combat d12+6, d12+6. Allonge 3."],
