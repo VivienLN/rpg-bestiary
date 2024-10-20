@@ -210,7 +210,7 @@
     "skills": [
       ["Combat", 6],
       ["Perception", 10],
-	  ["Arcanes", 6],
+	  ["Arcanes", 6]
     ],
     "hindrances": [
       ["Faiblesse (feu)", "Le feu inflige +4 dommages à la créature."]
@@ -241,21 +241,21 @@
       ["Athlétisme", 8],
       ["Combat", 8],
       ["Perception", 8],
-      ["Discrétion", 8],
+      ["Discrétion", 8]
     ],
     "hindrances": [
       ["Faiblesse (glace et eau)", "La glace et l'eau inflige +4 dommages à la créature."],
       ["Point faible (queue)", "Si les flammes de sa queue sont éteintes, est automatiquement secoué."],
-      ["Phobie (eau)", "N'ira pas dans l'eau."],
+      ["Phobie (eau)", "N'ira pas dans l'eau."]
     ],
     "edges": [
 	  ["Vision nocturne", "Ignore les malus de pénombre et d'obscurité"],
 	  ["Taille 2", "Résistance et taille +1"],
-	  ["Corps ardent", "Ses griffes et sa gueule incandescents infligent des dommages de feu."],
+	  ["Corps ardent", "Ses griffes et sa gueule incandescents infligent des dommages de feu."]
 	],
     "melee": [
       ["Morsure", "Combat d8, d8+d6 dégats. Dommages de feu (pas de brûlure)."],
-      ["Balayage de griffe", "Combat d8-2, d8+d6 dégats. Dommages de feu (pas de brûlure)."],
+      ["Balayage de griffe", "Combat d8-2, d8+d6 dégats. Dommages de feu (pas de brûlure)."]
     ]
   },
   {
