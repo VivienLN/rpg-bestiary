@@ -1,10 +1,203 @@
 [
   {
-    "name": "Squalide (Guerrier)",
+    "name": "Piquier Gorog",
+	"image": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8f/Bullywug-5e.jpg/revision/latest?cb=20161119174933",
+    "hearts": 0,
+    "agi": 8,
+    "spi": 4,
+    "str": 6,
+    "sma": 6,
+    "vig": 6,
+    "parry": 6,
+    "toughness": {"total": 4, "armor": 0},
+    "skills": [
+      ["Combat", 6],
+      ["Perception", 6],
+      ["Athlétisme", 8],
+      ["Survie", 10]
+    ],
+    "hindrances": [
+      ["Frêle", "Résistance -1"]
+    ],
+    "edges": [
+      ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."]
+    ],
+    "melee": [
+      ["Epieu", "Combat d6, 2d6 dégats, PA 2, Allonge +1. Deux mains."],
+      ["Epieu (balayage)", "Combat d6-2, 2d6 dégats. Deux mains."],
+      ["Coup de langue", "Combat d6, d6+d4 dégats, Allonge +3. Arme naturelle."],
+    ],
+    "ranged": []
+  },
+  {
+    "name": "Chasseur Gorog",
+	"image": "https://static.wikia.nocookie.net/aurelius/images/a/af/Grung.jpg/revision/latest?cb=20220921020906",
+    "hearts": 0,
+    "agi": 8,
+    "spi": 6,
+    "str": 6,
+    "sma": 6,
+    "vig": 4,
+    "parry": 4,
+    "toughness": {"total": 3, "armor": 0},
+    "skills": [
+      ["Combat", 4],
+      ["Tir", 6],
+      ["Perception", 6],
+      ["Athlétisme", 8],
+      ["Survie", 10]
+    ],
+    "hindrances": [
+      ["Frêle", "Résistance -1"]
+    ],
+    "edges": [
+      ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."]
+    ],
+    "melee": [
+      ["Couteau", "Combat d4, 2d4 dégats."],
+      ["Coup de langue", "Combat d4, d6+d4 dégats, Allonge 3. Arme naturelle."]
+    ],
+    "ranged": [
+      ["Arc court", "Tir d6, 2d6 dégats. Portée 12/24/48."]
+    ]
+  },
+  {
+    "name": "Tambourineur Gorog",
+    "hearts": 0,
+    "agi": 6,
+    "spi": 8,
+    "str": 8,
+    "sma": 6,
+    "vig": 10,
+    "parry": 7,
+    "toughness": {"total": 6, "armor": 0},
+    "skills": [
+      ["Performance", 8],
+      ["Combat", 8],
+      ["Perception", 8],
+      ["Athlétisme", 2],
+      ["Survie", 8]
+    ],
+    "hindrances": [
+      ["Tambour", "Attaché à la ceinture du tambourineur, il le protège mais l'empêche de sauter aussi haut que ses congénères, et réduit sa vitesse. Parade +1, Allure -1."]
+    ],
+    "edges": [],
+    "melee": [
+      ["Massue", "Combat d8, d8+d6 dégats."],
+      ["Coup de langue", "Combat d8, d8+d4 dégats, Allonge 3. Arme naturelle."]
+    ],
+    "ranged": [],
+    "magic": [
+      ["Rythme furieux", "Performance d8, dégâts d'arme +1[+2] à tous les alliés à portée."],
+      ["Appel guerrier", "Performance d8, fait venir 2[4] Piquiers et/ou Chasseurs Gorog au prochain tour."]
+    ]
+  },
+  {
+    "name": "Ranger Gorog",
+	"image": "https://i.redd.it/vlas0kpilo421.png",
+    "hearts": 0,
+    "agi": 8,
+    "spi": 8,
+    "str": 8,
+    "sma": 8,
+    "vig": 8,
+    "parry": 4,
+    "toughness": {"total": 6, "armor": 0},
+    "skills": [
+      ["Combat", 6],
+      ["Tir", 8],
+      ["Perception", 10],
+      ["Athlétisme", 8],
+      ["Survie", 10]
+    ],
+    "hindrances": [],
+    "edges": [
+      ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
+      ["Familier", "Accompagné d'un Scarabourgeon."]
+    ],
+    "melee": [
+      ["Couteau", "Combat d6, d6+d4 dégats."],
+      ["Coup de langue", "Combat d6, d6+d4 dégats, Allonge 3. Arme naturelle."]
+    ],
+    "ranged": [
+      ["Arc", "Tir d8, 2d6 dégats. Portée 12/24/48."],
+      ["Sarbacane", "Tir d8, Portée 12/24/48. Inflige Poison : si touchée, la cible doit réussir un jet de Vigueur-2 sous peine d'être Distrait et de subir 1 niveau de Fatigue (2 si échec critique), sans toute fois pouvoir en être incapacité."]
+    ]
+  },
+  {
+    "name": "Champion Gorog",
+	"image": "https://i.pinimg.com/564x/52/e6/97/52e697477f65582b551d5f5f0f7afa19.jpg",
     "hearts": 1,
+	"joker": true,
+    "agi": 8,
+    "spi": 8,
+    "str": 8,
+    "sma": 8,
+    "vig": 8,
+    "parry": 7,
+    "toughness": {"total": 7, "armor": 1},
+    "skills": [
+      ["Combat", 8],
+      ["Tir", 6],
+      ["Perception", 8],
+      ["Athlétisme", 8],
+      ["Survie", 8]
+    ],
+    "hindrances": [],
+    "edges": [
+      ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
+      ["Rapide", "Allure +1."],
+      ["Armure rudimentaire", "Armure +1."],
+    ],
+    "melee": [
+      ["Lance", "Combat d8, d8+d6 dégats. Parade +1, Allonge 1, nécessite 2 mains."],
+      ["Lance (balayage)", "Combat d8-2, d8+d6 dégats. Nécessite 2 mains."],
+      ["Dague empoisonnée", "Combat d8, d8+d4 dégats. Inflige Poison : si touchée, la cible doit réussir un jet de Vigueur-2 sous peine d'être Distrait et de subir 1 niveau de Fatigue (2 si échec critique), sans toute fois pouvoir en être incapacité."]
+      ["Coup de langue", "Combat d8, d8+d4 dégats, Allonge 3. Arme naturelle."]
+    ],
+    "ranged": []
+  },
+  {
+    "name": "Seigneur Gorog",
+	"image": "https://cdnb.artstation.com/p/assets/images/images/077/961/827/4k/bram-sels-wotc-mtg-glarb-calamitys-augur-bram-sels.jpg",
+    "hearts": 3,
+	"joker": true,
+    "agi": 10,
+    "spi": 10,
+    "str": 10,
+    "sma": 10,
+    "vig": 10,
+    "parry": 7,
+    "toughness": {"total": 8, "armor": 1},
+    "skills": [
+      ["Combat", 10],
+      ["Tir", 10],
+      ["Perception", 10],
+      ["Athlétisme", 8],
+      ["Survie", 6]
+    ],
+    "hindrances": [],
+    "edges": [
+      ["Monture", "Tigrours ardent. Tant qu'il est dessus, bénéficie de Allure +2. Les deux n'agissent pas en même temps. Au corps à corps, il faut d'abord tuer la monture ou faire tomber le Seigneur Gorog, pour l'atteindre"],
+      ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
+      ["Armure rudimentaire", "Armure +1."],
+    ],
+    "melee": [
+      ["Lance", "Combat d8, d8+d6 dégats. Parade +1, Allonge 1, nécessite 2 mains."],
+      ["Lance (balayage)", "Combat d8-2, d8+d6 dégats. Nécessite 2 mains. Ne peut pas être utilisé sur la monture."],
+      ["Coup de langue", "Combat d8, d8+d4 dégats, Allonge 3. Arme naturelle."]
+    ],
+    "ranged": [
+      ["Arc", "Tir d10, 2d6 dégats. Portée 12/24/48."],
+      ["Flèche enflammée", "Seulement sur monture, utilise le feu du Tigrours ardent pour enflammer une flèche et la décocher. Tir d10, 2d6+2 dégats. Portée 12/24/48."],
+    ]
+  },
+  {
+    "name": "Squalide (Guerrier)",
+    "hearts": 2,
     "agi": 10,
     "spi": 6,
-    "str": 10,
+    "str": 12,
     "sma": 4,
     "vig": 8,
     "parry": 7,
@@ -40,17 +233,17 @@
   },
   {
     "name": "Squalide (Shaman)",
-    "hearts": 1,
+    "hearts": 2,
     "agi": 4,
     "spi": 8,
-    "str": 4,
+    "str": 6,
     "sma": 10,
     "vig": 6,
     "parry": 5,
     "toughness": {"total": 7, "armor": 1},
     "skills": [
       ["Perception", 12],
-      ["Combat", 4],
+      ["Combat", 6],
       ["Athlétisme", 4],
       ["Culture générale", 10],
       ["Education", 6],
@@ -59,7 +252,7 @@
       ["Provocation", 6],
       ["Survie", 8],
       ["Tir", 4],
-      ["Magie", 10]
+      ["Magie", 12]
     ],
     "hindrances": [
       ["Dépendance (eau)"],
@@ -70,13 +263,95 @@
       ["Balaise", "Résistance +1"]
     ],
     "melee": [
-      ["Morsure", "Combat d10, d10+d4 dégats (la victime doit d'abord avoir été empoignée)"],
-      ["Bâton", "Combat d4 (balayage : d4-2), 2d4. Allonge 1, deux mains, Parade +1."]
+      ["Morsure", "Combat d6, d6+d4 dégats (la victime doit d'abord avoir été empoignée)"],
+      ["Bâton", "Combat d6 (balayage : d6-2), d6=d4. Allonge 1, deux mains, Parade +1."]
     ],
     "magic": [
-      ["Lame de vent", "Magie d10, distance, 2d6 dégâts"],
-      ["Guérison", "Magie d10, contact, soigne 1 blessure < 1h"],
-      ["Convocation d'esprit du Ragondin", "Magie d10, convoque 1 [[Esprit du Ragondin]]"]
+      ["Lame de vent", "Magie d12, distance, 2d6 dégâts"],
+      ["Guérison", "Magie d12, contact, soigne 1 blessure < 1h"],
+      ["Convocation d'esprit du Ragondin", "Magie d12, convoque 1 [[Esprit du Ragondin]]"]
+    ]
+  },
+  {
+    "name": "Squalide (Guerrier) (Joker)",
+    "hearts": 3,
+    "joker": true,
+    "agi": 10,
+    "spi": 6,
+    "str": 13,
+    "sma": 4,
+    "vig": 12,
+    "parry": 8,
+    "toughness": {"total": 13, "armor": 4},
+    "skills": [
+      ["Perception", 8],
+      ["Combat", 12],
+      ["Athlétisme", 8],
+      ["Culture générale", 4],
+      ["Discrétion", 8],
+      ["Persuasion", 8],
+      ["Provocation", 8],
+      ["Survie", 10],
+      ["Tir", 8],
+      ["Intimidation", 10]
+    ],
+    "hindrances": [
+      ["Dépendance (eau)"],
+      ["Arrogant", "Aime dominer son opposant, confronte l'adversaire le plus puissant au combat."]
+    ],
+    "edges": [
+      ["Aquatique", "Ne peut se noyer et se déplace à son allure lorsqu'il nage."],
+      ["Balaise", "Résistance +1"]
+    ],
+    "melee": [
+      ["Morsure", "Combat d12, d12+d4+1 dégats (la victime doit d'abord avoir été empoignée)"],
+      ["Epée à deux mains", "Combat d12 (balayage : d12-2), d12+d10+1. Deux mains."],
+      ["Marteau de guerre", "Combat d12 (balayage : d12-2), d12+d6+1. PA 1."]
+    ],
+    "ranged": [
+      ["Pistolet", "Tir d8, 5/10/20, 2d6+1"]
+    ]
+  },
+  {
+    "name": "Squalide (Shaman) (Joker)",
+    "hearts": 3,
+    "joker": true,
+    "agi": 8,
+    "spi": 10,
+    "str": 8,
+    "sma": 12,
+    "vig": 10,
+    "parry": 6,
+    "toughness": {"total": 9, "armor": 2},
+    "skills": [
+      ["Perception", 12],
+      ["Combat", 8],
+      ["Athlétisme", 6],
+      ["Culture générale", 12],
+      ["Education", 10],
+      ["Discrétion", 10],
+      ["Persuasion", 12],
+      ["Provocation", 6],
+      ["Survie", 8],
+      ["Tir", 6],
+      ["Magie", 14]
+    ],
+    "hindrances": [
+      ["Dépendance (eau)"],
+      ["Arrogant", "Aime dominer son opposant, confronte l'adversaire le plus puissant au combat."]
+    ],
+    "edges": [
+      ["Aquatique", "Ne peut se noyer et se déplace à son allure lorsqu'il nage."],
+      ["Balaise", "Résistance +1"]
+    ],
+    "melee": [
+      ["Morsure", "Combat d8, d8+d4 dégats (la victime doit d'abord avoir été empoignée)"],
+      ["Bâton", "Combat d8 (balayage : d8-2), d8+d4. Allonge 1, deux mains, Parade +1."]
+    ],
+    "magic": [
+      ["Lame de vent supérieure", "Magie d12+2, distance, 2d6+2 dégâts"],
+      ["Guérison", "Magie d12+2, contact, soigne 1 blessure < 1h"],
+      ["Convocation d'esprit du Ragondin x2", "Magie d12+2, convoque 2 [[Esprit du Ragondin]]"]
     ]
   },
   {
@@ -386,22 +661,22 @@
     "name": "Jeune dinoléon",
     "image": "https://www.hep6.com/wp-content/uploads/2022/06/chameleon-10.jpg",
     "hearts": 1,
-    "agi": 10,
+    "agi": 12,
     "spi": 8,
-    "str": 12,
+    "str": 14,
     "sma": 6,
     "vig": 8,
     "pace": 9,
     "parry": 6,
-    "toughness": {"total": 8, "armor": 0},
+    "toughness": {"total": 10, "armor": 0},
     "skills": [
       ["Athlétisme", 12],
-      ["Combat", 6],
+      ["Combat", 10],
       ["Discrétion", 8],
       ["Perception", 6]
     ],
     "hindrances": [
-      ["Point faible (Oeil)", "Les attaques sur les yeux infligent +4 de dégâts."]
+      ["Point faible (Oeil)", "Les attaques sur les yeux ignorent l'armure et infligent +4 de dégâts."]
     ],
     "edges": [
       ["Taille 3", "Mesure 4m de haut et pèse environ 1 tonne."],
@@ -409,9 +684,9 @@
       ["Adhérence", "Peut se déplacer normalement sur les surfaces verticales ou à la moitié de son allure la tête en bas"]
     ],
     "melee": [
-      ["Coup de langue", "Combat d6, d12. Allonge 2."],
-      ["Coup de boule", "Combat d6, d12+2"],
-      ["Balayage de queue", "Combat d6-2, d12"]
+      ["Coup de langue", "Combat d10, d12+2. Allonge 2."],
+      ["Coup de boule", "Combat d10, d12+d4+2"],
+      ["Balayage de queue", "Combat d10-2, d12+d4+2. Allonge 1."]
     ],
     "magic": [
       ["Invisibilité", "Âme d8, soi-même. Devient transparent mais un peu flou avec de vagues contours. Toute action à son encontre requiérant la vue se fait à -4 (-6 si prouesse). Même malus sur un jet de Perception pour s'aviser de sa présence."]
@@ -421,22 +696,22 @@
     "name": "Dinoléon adulte",
     "image": "https://i.pinimg.com/736x/b5/79/1a/b5791a2dea2fc0e367713330bca490b0.jpg",
     "hearts": 2,
-    "agi": 12,
+    "agi": 14,
     "spi": 10,
-    "str": 14,
+    "str": 18,
     "sma": 6,
     "vig": 8,
     "pace": 10,
     "parry": 6,
-    "toughness": {"total": 11, "armor": 0},
+    "toughness": {"total": 12, "armor": 0},
     "skills": [
-      ["Athlétisme", 12],
-      ["Combat", 10],
+      ["Athlétisme", 13],
+      ["Combat", 12],
       ["Discrétion", 8],
-      ["Perception", 10]
+      ["Perception", 12]
     ],
     "hindrances": [
-      ["Point faible (Oeil)", "Les attaques sur les yeux infligent +4 de dégâts."]
+      ["Point faible (Oeil)", "Les attaques sur les yeux ignorent l'armure et infligent +4 de dégâts."]
     ],
     "edges": [
       ["Taille 6", "Grand (+2). Mesure 8m de haut et pèse 8 tonnes."],
@@ -444,9 +719,9 @@
       ["Adhérence", "Peut se déplacer normalement sur les surfaces verticales ou à la moitié de son allure la tête en bas"]
     ],
     "melee": [
-      ["Coup de langue", "Combat d10, d12+2. Allonge 3."],
-      ["Coup de boule", "Combat d10, d12+4. Allonge 1."],
-      ["Balayage de queue", "Combat d10-2, d12+2. Allonge 1."]
+      ["Coup de langue", "Combat d12+6, d12+6. Allonge 3."],
+      ["Coup de boule", "Combat d12+6, d12+d8+6."],
+      ["Balayage de queue", "Combat d12-4, d12+d8+6. Allonge 1."]
     ],
     "magic": [
       ["Invisibilité", "Âme d10, soi-même. Devient transparent mais un peu flou avec de vagues contours. Toute action à son encontre requiérant la vue se fait à -4 (-6 si prouesse). Même malus sur un jet de Perception pour s'aviser de sa présence."]
@@ -480,6 +755,26 @@
       ["Invisibilité", "Âme d8, soi-même. Devient transparent mais un peu flou avec de vagues contours. Toute action à son encontre requiérant la vue se fait à -4 (-6 si prouesse). Même malus sur un jet de Perception pour s'aviser de sa présence."],
       ["Protection", "Magie d10, une cible. Confère armure +2."],
       ["Croissance", "Magie d10, une cible. Taille +2, augmente la force de 2d et la résistance de 2."]
+    ]
+  },
+  {
+    "name": "Nuée de moustiques déchaînés",
+    "agi": 10,
+    "spi": 10,
+    "str": 6,
+    "sma": 4,
+    "vig": 10,
+    "parry": 4,
+    "pace": 10,
+    "toughness": {"total": 7, "armor": 0},
+    "skills": [
+      ["Perception", 6]
+    ],
+    "edges": [
+      ["Essaim", "Annule Secoué +2, Parade +2, immunisé aux armes perforantes ou tranchantes, subit les Zones d'effet et le Piétinement."]
+    ],
+    "melee": [
+      ["Piqûre", "Automatique en fin de tour (sauf si secoué), 2d4 contre protection la plus faible, sans effet contre une protection totalement étanche"]
     ]
   }
 ]

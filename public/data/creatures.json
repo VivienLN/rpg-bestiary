@@ -1,5 +1,198 @@
 [
   {
+    "name": "Piquier Gorog",
+	"image": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8f/Bullywug-5e.jpg/revision/latest?cb=20161119174933",
+    "hearts": 0,
+    "agi": 8,
+    "spi": 4,
+    "str": 6,
+    "sma": 6,
+    "vig": 6,
+    "parry": 6,
+    "toughness": {"total": 4, "armor": 0},
+    "skills": [
+      ["Combat", 6],
+      ["Perception", 6],
+      ["Athlétisme", 8],
+      ["Survie", 10]
+    ],
+    "hindrances": [
+      ["Frêle", "Résistance -1"]
+    ],
+    "edges": [
+      ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."]
+    ],
+    "melee": [
+      ["Epieu", "Combat d6, 2d6 dégats, PA 2, Allonge +1. Deux mains."],
+      ["Epieu (balayage)", "Combat d6-2, 2d6 dégats. Deux mains."],
+      ["Coup de langue", "Combat d6, d6+d4 dégats, Allonge +3. Arme naturelle."],
+    ],
+    "ranged": []
+  },
+  {
+    "name": "Chasseur Gorog",
+	"image": "https://static.wikia.nocookie.net/aurelius/images/a/af/Grung.jpg/revision/latest?cb=20220921020906",
+    "hearts": 0,
+    "agi": 8,
+    "spi": 6,
+    "str": 6,
+    "sma": 6,
+    "vig": 4,
+    "parry": 4,
+    "toughness": {"total": 3, "armor": 0},
+    "skills": [
+      ["Combat", 4],
+      ["Tir", 6],
+      ["Perception", 6],
+      ["Athlétisme", 8],
+      ["Survie", 10]
+    ],
+    "hindrances": [
+      ["Frêle", "Résistance -1"]
+    ],
+    "edges": [
+      ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."]
+    ],
+    "melee": [
+      ["Couteau", "Combat d4, 2d4 dégats."],
+      ["Coup de langue", "Combat d4, d6+d4 dégats, Allonge 3. Arme naturelle."]
+    ],
+    "ranged": [
+      ["Arc court", "Tir d6, 2d6 dégats. Portée 12/24/48."]
+    ]
+  },
+  {
+    "name": "Tambourineur Gorog",
+    "hearts": 0,
+    "agi": 6,
+    "spi": 8,
+    "str": 8,
+    "sma": 6,
+    "vig": 10,
+    "parry": 7,
+    "toughness": {"total": 6, "armor": 0},
+    "skills": [
+      ["Performance", 8],
+      ["Combat", 8],
+      ["Perception", 8],
+      ["Athlétisme", 2],
+      ["Survie", 8]
+    ],
+    "hindrances": [
+      ["Tambour", "Attaché à la ceinture du tambourineur, il le protège mais l'empêche de sauter aussi haut que ses congénères, et réduit sa vitesse. Parade +1, Allure -1."]
+    ],
+    "edges": [],
+    "melee": [
+      ["Massue", "Combat d8, d8+d6 dégats."],
+      ["Coup de langue", "Combat d8, d8+d4 dégats, Allonge 3. Arme naturelle."]
+    ],
+    "ranged": [],
+    "magic": [
+      ["Rythme furieux", "Performance d8, dégâts d'arme +1[+2] à tous les alliés à portée."],
+      ["Appel guerrier", "Performance d8, fait venir 2[4] Piquiers et/ou Chasseurs Gorog au prochain tour."]
+    ]
+  },
+  {
+    "name": "Ranger Gorog",
+	"image": "https://i.redd.it/vlas0kpilo421.png",
+    "hearts": 0,
+    "agi": 8,
+    "spi": 8,
+    "str": 8,
+    "sma": 8,
+    "vig": 8,
+    "parry": 4,
+    "toughness": {"total": 6, "armor": 0},
+    "skills": [
+      ["Combat", 6],
+      ["Tir", 8],
+      ["Perception", 10],
+      ["Athlétisme", 8],
+      ["Survie", 10]
+    ],
+    "hindrances": [],
+    "edges": [
+      ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
+      ["Familier", "Accompagné d'un Scarabourgeon."]
+    ],
+    "melee": [
+      ["Couteau", "Combat d6, d6+d4 dégats."],
+      ["Coup de langue", "Combat d6, d6+d4 dégats, Allonge 3. Arme naturelle."]
+    ],
+    "ranged": [
+      ["Arc", "Tir d8, 2d6 dégats. Portée 12/24/48."],
+      ["Sarbacane", "Tir d8, Portée 12/24/48. Inflige Poison : si touchée, la cible doit réussir un jet de Vigueur-2 sous peine d'être Distrait et de subir 1 niveau de Fatigue (2 si échec critique), sans toute fois pouvoir en être incapacité."]
+    ]
+  },
+  {
+    "name": "Champion Gorog",
+	"image": "https://i.pinimg.com/564x/52/e6/97/52e697477f65582b551d5f5f0f7afa19.jpg",
+    "hearts": 1,
+	"joker": true,
+    "agi": 8,
+    "spi": 8,
+    "str": 8,
+    "sma": 8,
+    "vig": 8,
+    "parry": 7,
+    "toughness": {"total": 7, "armor": 1},
+    "skills": [
+      ["Combat", 8],
+      ["Tir", 6],
+      ["Perception", 8],
+      ["Athlétisme", 8],
+      ["Survie", 8]
+    ],
+    "hindrances": [],
+    "edges": [
+      ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
+      ["Rapide", "Allure +1."],
+      ["Armure rudimentaire", "Armure +1."],
+    ],
+    "melee": [
+      ["Lance", "Combat d8, d8+d6 dégats. Parade +1, Allonge 1, nécessite 2 mains."],
+      ["Lance (balayage)", "Combat d8-2, d8+d6 dégats. Nécessite 2 mains."],
+      ["Dague empoisonnée", "Combat d8, d8+d4 dégats. Inflige Poison : si touchée, la cible doit réussir un jet de Vigueur-2 sous peine d'être Distrait et de subir 1 niveau de Fatigue (2 si échec critique), sans toute fois pouvoir en être incapacité."]
+      ["Coup de langue", "Combat d8, d8+d4 dégats, Allonge 3. Arme naturelle."]
+    ],
+    "ranged": []
+  },
+  {
+    "name": "Seigneur Gorog",
+	"image": "https://cdnb.artstation.com/p/assets/images/images/077/961/827/4k/bram-sels-wotc-mtg-glarb-calamitys-augur-bram-sels.jpg",
+    "hearts": 3,
+	"joker": true,
+    "agi": 10,
+    "spi": 10,
+    "str": 10,
+    "sma": 10,
+    "vig": 10,
+    "parry": 7,
+    "toughness": {"total": 8, "armor": 1},
+    "skills": [
+      ["Combat", 10],
+      ["Tir", 10],
+      ["Perception", 10],
+      ["Athlétisme", 8],
+      ["Survie", 6]
+    ],
+    "hindrances": [],
+    "edges": [
+      ["Monture", "Tigrours ardent. Tant qu'il est dessus, bénéficie de Allure +2. Les deux n'agissent pas en même temps. Au corps à corps, il faut d'abord tuer la monture ou faire tomber le Seigneur Gorog, pour l'atteindre"],
+      ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
+      ["Armure rudimentaire", "Armure +1."],
+    ],
+    "melee": [
+      ["Lance", "Combat d8, d8+d6 dégats. Parade +1, Allonge 1, nécessite 2 mains."],
+      ["Lance (balayage)", "Combat d8-2, d8+d6 dégats. Nécessite 2 mains. Ne peut pas être utilisé sur la monture."],
+      ["Coup de langue", "Combat d8, d8+d4 dégats, Allonge 3. Arme naturelle."]
+    ],
+    "ranged": [
+      ["Arc", "Tir d10, 2d6 dégats. Portée 12/24/48."],
+      ["Flèche enflammée", "Seulement sur monture, utilise le feu du Tigrours ardent pour enflammer une flèche et la décocher. Tir d10, 2d6+2 dégats. Portée 12/24/48."],
+    ]
+  },
+  {
     "name": "Squalide (Guerrier)",
     "hearts": 2,
     "agi": 10,
