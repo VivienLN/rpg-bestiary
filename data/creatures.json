@@ -275,7 +275,8 @@
       ["Perception", 6]
     ],
     "hindrances": [
-      ["Faiblesse (feu)", "Le feu inflige +4 dommages à la créature."]
+      ["Faiblesse (feu)", "Le feu inflige +4 dommages à la créature."],
+	  ["Point faible (fleur)", "Il est possible d'attendre que la Fleurantule ouvre sa \"fleur\" pour toucher ses organes directement. +6 dégats."]
     ],
     "edges": [
 	  ["Adhérence+", "Peut se déplacer normalement sur les surfaces verticales ou les plafonds."]
@@ -286,6 +287,63 @@
     "ranged": [
       ["Toile", "Tir d6, portée 6, cible Entravée [Immobilisée]. Toile projetée depuis le thorax."]
 	]
+  },
+  {
+    "name": "Lézard de lianes",
+	"image": "https://i.imgur.com/zD05AMS.png",
+    "hearts": 0,
+    "agi": 10,
+    "spi": 8,
+    "str": 8,
+    "sma": 8,
+    "vig": 6,
+    "parry": 6,
+    "toughness": {"total": 6, "armor": 1},
+    "skills": [
+      ["Combat", 8],
+      ["Perception", 10],
+      ["Discrétion", 12]
+    ],
+    "hindrances": [
+      ["Faiblesse (feu)", "Le feu inflige +4 dommages à la créature."]
+    ],
+    "edges": [
+	  ["Peau dure", "Armure +1."],
+	  ["Camouflé", "Le Lézard de lianes se fond naturellement dans son environnement. Les personnages doivent réussir un jet de Perception vs. Discrétion du Lézard de liane afin de le détecter."],
+	  ["Immunité aux poisons"]
+    ],
+    "melee": [
+      ["Morsure", "Combat d8, d8+d6 dégats."]
+    ]
+  },
+  {
+    "name": "Lézard luxuriant",
+	"image": "https://i.pinimg.com/736x/36/ed/36/36ed36abcd915c71253c85ae04102242.jpg",
+    "hearts": 1,
+    "agi": 12,
+    "spi": 10,
+    "str": 10,
+    "sma": 10,
+    "vig": 10,
+    "parry": 7,
+    "toughness": {"total": 7, "armor": 0},
+    "skills": [
+      ["Combat", 10],
+      ["Tir", 10],
+      ["Perception", 10]
+    ],
+    "hindrances": [
+      ["Faiblesse (feu)", "Le feu inflige +4 dommages à la créature."]
+    ],
+    "edges": [
+	  ["Peau écailleuse", "Armure +2."],
+	  ["Immunité aux poisons"]
+    ],
+    "melee": [
+      ["Griffure / Morsure", "Combat d10, d10+d6 dégats. Arme naturelle."],
+      ["Queue empoisonnée", "Combat d10, d10+d6 dégats. Inflige Poison : si touchée, la cible doit réussir un jet de Vigueur-2 sous peine d'être Distrait et de subir 1 niveau de Fatigue (2 si échec critique), sans toute fois pouvoir en être incapacité."],
+      ["Queue empoisonnée (balayage)", "Combat d10-2, d10+d6 dégats. Inflige Poison : voir description Queue empoisonnée."]
+    ]
   },
   {
     "name": "Squelette sabreur",
@@ -315,284 +373,5 @@
     "ranged": [
       ["Pistolet à silex (x2)", "Tir d6, portée 10/20/40, recharge 2, 2d6+1 dégats."]
 	]
-  },
-  {
-    "name": "Esprit tentaculeur",
-    "image": "https://i.pinimg.com/originals/7a/e4/8a/7ae48ab3826c12f4d773581151537909.jpg",
-    "str": 6,
-    "pace": 0,
-    "parry": 4,
-    "toughness": {"total": 4, "armor": 0},
-    "skills": [
-      ["Combat", 4],
-      ["Discrétion", 6],
-      ["Perception", 4]
-    ],
-    "edges": [
-      ["Sans peur", "Immunisé à Terreur et Intimidation"],
-      ["Esprit", "Ne respire pas, immunisé aux poisons et aux maladies"],
-      ["Allonge +2"]
-    ],
-    "melee": [
-      ["Surgissement", "Sort de terre et attaque immédiatement par surprise. La cible doit réussir un jet de perception, sinon l'esprit a +2 au jets d'attaques et de dégâts durant 1 round."],
-      ["Coup", "Combat d4 (Balayage : d4-2), d4+d6. Rappel : Allonge +2."]
-    ]
-  },
-  {
-    "name": "Mycomancien Gorog",
-    "joker": false,
-    "hearts": 0,
-    "image": "https://cdna.artstation.com/p/assets/images/images/050/865/596/large/heidi-van-lee-frog-frog-frogyfghgjjh.jpg?1655883579",
-    "agi": 6,
-    "spi": 4,
-    "str": 6,
-    "sma": 10,
-    "vig": 4,
-    "pace": 6,
-    "parry": 5,
-    "toughness": {"total": 4, "armor": 2},
-    "skills": [
-      ["Athlétisme", 6],
-      ["Combat", 4],
-      ["Culture générale", 4],
-      ["Discrétion", 10],
-      ["Perception", 6],
-      ["Persuasion", 6],
-      ["Soins", 4],
-      ["Survie", 8],
-      ["Tir", 4],
-      ["Magie", 10]
-    ],
-    "hindrances": [
-      ["Taille -1", "Résistance -1"]
-    ],
-    "edges": [
-      ["Bond", "+4 aux dégats lorsqu'il bondit pour faire une attaque totale. Peut sauter 2x plus haut et plus loin."],
-      ["Semi-aquatique", "Tient 15mn en apnée"],
-      ["Contact empoisonné", "Attaque pour toucher (p. 100), ou si contact, la victime doit réussir un jet de vigueur ou subir un poison modéré."]
-    ],
-    "magic": [
-      ["Spores hypnotisantes", "cf. Marionnette p. 166"],
-      ["Convocation de Moisissure vivante", "Magie d10, convoque 1 [[Moisissure vivante]]."]
-    ],
-    "melee": [
-      ["Bâton", "Combat d4, 2d4"]
-    ],
-    "ranged": [
-      ["Pistolet", "Tir d4, 5/10/20, 2d6+1"]
-    ]
-  },
-  {
-    "name": "Moisissure vivante",
-    "image": "https://64.media.tumblr.com/64e2bc27bba47d10805cddb56c94a962/tumblr_mjx8qr2Sry1rtdsh3o6_1280.jpg",
-    "pace": 5,
-    "parry": 5,
-    "toughness": {"total": 5, "armor": 0},
-    "skills": [
-      ["Athlétisme", 6],
-      ["Combat", 6],
-      ["Perception", 6],
-      ["Tir", 4]
-    ],
-    "hindrances": [
-      ["Odeur putride", "On le sent venir à des kilomètres"]
-    ],
-    "edges": [
-      ["Sans peur", "Immunisé à Terreur et Intimidation"],
-      ["Enfouissement", "Se décompose et se recompose ailleurs, cf. p. 176"]
-    ],
-    "melee": [
-      ["Griffe moisie", "Combat d6, 2d4"]
-    ],
-    "ranged": [
-      ["Lance-champote", "Tir d4, 5/10/20, 2d4"]
-    ]
-  },
-  {
-    "name": "Zimachi",
-    "unique": true,
-    "joker": true,
-    "hearts": 3,
-    "agi": 6,
-    "spi": 6,
-    "str": 4,
-    "sma": 10,
-    "vig": 6,
-    "pace": 6,
-    "parry": 4,
-    "toughness": {"total": 6, "armor": 1},
-    "skills": [
-      ["Athlétisme", 4],
-      ["Culture générale", 4],
-      ["Education", 6],
-      ["Discrétion", 6],
-      ["Perception", 8],
-      ["Persuasion", 8],
-      ["Magie", 10]
-    ],
-    "edges": [
-      ["Semi-aquatique", "Tient 15mn en apnée"],
-      ["Vision nocturne"],
-      ["Enfouissement", "cf. p. 176"]
-    ],
-    "magic": [
-      ["Convocation d'esprit du Babouin", "Réussit toujours. Convoque [[Esprit du Titan Babouin (Zimachi)]]."],
-      ["Dague spirituelle", "Magie d10, distance, 2d6 dégâts"],
-      ["Guérison", "Magie d10, contact, Soigne 1 blessure < 1h"]
-    ]
-  },
-  {
-    "name": "Esprit du Titan Babouin (Zimachi)",
-    "image": "https://i.pinimg.com/originals/29/0f/a9/290fa9aed14c6d23429768f0442ce6e9.jpg",
-    "unique": true,
-    "hearts": 1,
-    "agi": 6,
-    "spi": 6,
-    "str": 8,
-    "sma": 4,
-    "vig": 8,
-    "pace": 5,
-    "parry": 5,
-    "toughness": {"total": 10, "armor": 0},
-    "skills": [
-      ["Athlétisme", 4],
-      ["Combat", 6],
-      ["Perception", 8],
-      ["Tir", 6]
-    ],
-    "hindrances": [
-      ["Lumineux", "Impossible de se cacher"]
-    ],
-    "edges": [
-      ["Taille 2", "Mesure environ 2,50m"],
-      ["Esprit", "Ne respire pas, immunisé aux poisons et aux maladies"]
-    ],
-    "melee": [
-      ["Colonne (comme arme de mêlée)", "Combat d6 (balayage : d6-2), d6+d8. Attaquer sa main pour qu'il la lâche."],
-      ["Mains nues", "Combat d6, d8 de dégâts"]
-    ],
-    "ranged": [
-      ["Colonne (lancée)", "Tir d4, 1/2/4, 2d8"]
-    ]
-  },
-  {
-    "name": "Jeune dinoléon",
-    "image": "https://www.hep6.com/wp-content/uploads/2022/06/chameleon-10.jpg",
-    "hearts": 1,
-    "agi": 12,
-    "spi": 8,
-    "str": 14,
-    "sma": 6,
-    "vig": 8,
-    "pace": 9,
-    "parry": 6,
-    "toughness": {"total": 10, "armor": 0},
-    "skills": [
-      ["Athlétisme", 12],
-      ["Combat", 10],
-      ["Discrétion", 8],
-      ["Perception", 6]
-    ],
-    "hindrances": [
-      ["Point faible (Oeil)", "Les attaques sur les yeux ignorent l'armure et infligent +4 de dégâts."]
-    ],
-    "edges": [
-      ["Taille 3", "Mesure 4m de haut et pèse environ 1 tonne."],
-      ["Langue collante", "Ignore 2 points de malus d'actions multiples chaque tour."],
-      ["Adhérence", "Peut se déplacer normalement sur les surfaces verticales ou à la moitié de son allure la tête en bas."]
-    ],
-    "melee": [
-      ["Coup de langue", "Combat d10, d12+2. Allonge 2."],
-      ["Coup de boule", "Combat d10, d12+d4+2"],
-      ["Balayage de queue", "Combat d10-2, d12+d4+2. Allonge 1."]
-    ],
-    "magic": [
-      ["Invisibilité", "Âme d8, soi-même. Devient transparent mais un peu flou avec de vagues contours. Toute action à son encontre requiérant la vue se fait à -4 (-6 si prouesse). Même malus sur un jet de Perception pour s'aviser de sa présence."]
-    ]
-  },
-  {
-    "name": "Dinoléon adulte",
-    "image": "https://i.pinimg.com/736x/b5/79/1a/b5791a2dea2fc0e367713330bca490b0.jpg",
-    "hearts": 2,
-    "agi": 14,
-    "spi": 10,
-    "str": 18,
-    "sma": 6,
-    "vig": 8,
-    "pace": 10,
-    "parry": 6,
-    "toughness": {"total": 12, "armor": 0},
-    "skills": [
-      ["Athlétisme", 13],
-      ["Combat", 12],
-      ["Discrétion", 8],
-      ["Perception", 12]
-    ],
-    "hindrances": [
-      ["Point faible (Oeil)", "Les attaques sur les yeux ignorent l'armure et infligent +4 de dégâts."]
-    ],
-    "edges": [
-      ["Taille 6", "Grand (+2). Mesure 8m de haut et pèse 8 tonnes."],
-      ["Langue collante", "Ignore 2 points de malus d'actions multiples chaque tour."],
-      ["Adhérence", "Peut se déplacer normalement sur les surfaces verticales ou à la moitié de son allure la tête en bas."]
-    ],
-    "melee": [
-      ["Coup de langue", "Combat d12+6, d12+6. Allonge 3."],
-      ["Coup de boule", "Combat d12+6, d12+d8+6."],
-      ["Balayage de queue", "Combat d12-4, d12+d8+6. Allonge 1."]
-    ],
-    "magic": [
-      ["Invisibilité", "Âme d10, soi-même. Devient transparent mais un peu flou avec de vagues contours. Toute action à son encontre requiérant la vue se fait à -4 (-6 si prouesse). Même malus sur un jet de Perception pour s'aviser de sa présence."]
-    ]
-  },
-  {
-    "name": "Petit dracoléon",
-    "image": "https://cdnb.artstation.com/p/assets/images/images/028/501/015/large/jessica-faucher-wip04.jpg?1594664547",
-    "agi": 8,
-    "spi": 8,
-    "str": 1,
-    "sma": 10,
-    "vig": 4,
-    "pace": 5,
-    "parry": 2,
-    "toughness": {"total": 2, "armor": 0},
-    "skills": [
-      ["Athlétisme", 8],
-      ["Magie", 10],
-      ["Discrétion", 12],
-      ["Perception", 10]
-    ],
-    "hindrances": [
-      ["Peureux", "Ne combat qu'avec d'autres. S'enfuit le cas échéant."]
-    ],
-    "edges": [
-      ["Taille -3", "Mesure une trentaine de centimètres"],
-      ["Vol", "Peut se déplacer normalement dans les airs"]
-    ],
-    "magic": [
-      ["Invisibilité", "Âme d8, soi-même. Devient transparent mais un peu flou avec de vagues contours. Toute action à son encontre requiérant la vue se fait à -4 (-6 si prouesse). Même malus sur un jet de Perception pour s'aviser de sa présence."],
-      ["Protection", "Magie d10, une cible. Confère armure +2."],
-      ["Croissance", "Magie d10, une cible. Taille +2, augmente la force de 2d et la résistance de 2."]
-    ]
-  },
-  {
-    "name": "Nuée de moustiques déchaînés",
-    "agi": 10,
-    "spi": 10,
-    "str": 6,
-    "sma": 4,
-    "vig": 10,
-    "parry": 4,
-    "pace": 10,
-    "toughness": {"total": 7, "armor": 0},
-    "skills": [
-      ["Perception", 6]
-    ],
-    "edges": [
-      ["Essaim", "Annule Secoué +2, Parade +2, immunisé aux armes perforantes ou tranchantes, subit les Zones d'effet et le Piétinement."]
-    ],
-    "melee": [
-      ["Piqûre", "Automatique en fin de tour (sauf si secoué), 2d4 contre protection la plus faible, sans effet contre une protection totalement étanche"]
-    ]
   }
 ]
