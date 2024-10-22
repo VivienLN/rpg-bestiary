@@ -91,6 +91,12 @@
     </Transition>
 
     <Transition name="slide" mode="out-in" :duration="400" appear>
+      <div class="description" :key="slug" v-if="creature.description">
+        {{ creature.description }}
+      </div>
+    </Transition>
+
+    <Transition name="slide" mode="out-in" :duration="400" appear>
       <div class="skills" :key="slug">
         <h3 class="inline">Compétences&nbsp;:</h3>
         {{ creature.skills.map(s => `${s[0]}&nbsp;${toDiceNotation(s[1])}`).join(', ') }}
@@ -128,10 +134,8 @@
     padding: .3rem 1rem .4rem;
     margin-bottom: .4rem;
     color: #fff;
-    text-transform: uppercase;
-    font-size: 1.25em;
-    letter-spacing: -.02em;
-    font-weight: bold;
+    font-size: 1.6em;
+	line-height: 1;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -155,9 +159,8 @@
   h1 .icon-heart {
     fill: #fff;
     margin-left: .4rem;
-    margin-top: -.1em;
     margin-bottom: -.1em;
-    height: .9em;
+    height: 1em;
   }
   h1 .icon-joker {
     height: 2.8rem;
@@ -209,7 +212,7 @@
     justify-content: space-between;
     text-align: center;
     padding-bottom: .6rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
   }
   .block-attributes h3 {
     margin-bottom: 0;
@@ -220,8 +223,13 @@
     display: inline-block;
   }
 
+  .description {
+    margin-bottom: 1rem;
+	font-style: italic;
+  }
+
   .skills {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
   }
 
   .details {
@@ -232,7 +240,8 @@
 
   .details li {
     position: relative;
-    padding-left: 1.26em;
+    padding-left: 1.4em;
+	margin-bottom: .3em;
   }
 
   .details li .icon {

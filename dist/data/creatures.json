@@ -72,6 +72,7 @@
     "parry": 7,
     "pace": 5,
     "toughness": {"total": 6, "armor": 0},
+	"description": "Portant un tambour devant lui, attaché par la taille, le Tambourineur en joue pour galvaniser ses alliés. Les Gorogs utilisent souvent les tambours pour communiquer sur de longues distances, il peut donc servir également à appeler du renfort.",
     "skills": [
       ["Performance", 8],
       ["Combat", 8]
@@ -103,6 +104,7 @@
     "vig": 8,
     "parry": 4,
     "toughness": {"total": 6, "armor": 0},
+	"description": "Un Gorog qui se cache dans les arbres et utilise sa sarbacane pour chasser.",
     "skills": [
       ["Combat", 6],
       ["Tir", 8],
@@ -138,6 +140,7 @@
     "parry": 7,
     "pace": 7,
     "toughness": {"total": 7, "armor": 1},
+	"description": "Un combattant autant craint que respecté parmi ses pairs, selon la tradition gorog, il manie une lance et une dague empoisonnée.",
     "skills": [
       ["Combat", 8],
       ["Tir", 6],
@@ -237,6 +240,7 @@
     "vig": 8,
     "parry": 6,
     "toughness": {"total": 7, "armor": 0},
+	"description": "Une bête sauvage se déplaçant en groupe. Sa queue est surmontée d'une petite flamme, tandis que ses pattes et sa gueule renferment des braises ardentes.",
     "skills": [
       ["Athlétisme", 8],
       ["Combat", 8],
@@ -269,6 +273,7 @@
     "vig": 4,
     "parry": 5,
     "toughness": {"total": 4, "armor": 0},
+	"description": "Cette arraignée surmontée d'une plante carnivore chasse en grands groupes.",
     "skills": [
       ["Combat", 6],
       ["Tir", 6],
@@ -299,6 +304,7 @@
     "vig": 6,
     "parry": 6,
     "toughness": {"total": 6, "armor": 1},
+	"description": "Ce reptile se fond souvent dans la végétation de la jungle, se cachant en attendant une opportunité d'attaquer un animal plus faible que lui.",
     "skills": [
       ["Combat", 8],
       ["Perception", 10],
@@ -327,6 +333,7 @@
     "vig": 10,
     "parry": 7,
     "toughness": {"total": 7, "armor": 0},
+	"description": "Ce reptile imposant semble fait de végétation, et sa queue est surmontée d'un poids imprégnée de poison.",
     "skills": [
       ["Combat", 10],
       ["Tir", 10],
