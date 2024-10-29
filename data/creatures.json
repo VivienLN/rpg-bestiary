@@ -1,7 +1,7 @@
 [
   {
     "name": "Piquier Gorog",
-	"image": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8f/Bullywug-5e.jpg",
+    "image": "https://i.imgur.com/HRqmCx8.jpeg",
     "hearts": 0,
     "agi": 8,
     "spi": 4,
@@ -19,7 +19,7 @@
     ],
     "edges": [
       ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
-	  ["Immunité aux poisons"]
+      ["Immunité aux poisons"]
     ],
     "melee": [
       ["Epieu", "Combat d6, 2d6 dégats, PA 2, Allonge +1. Deux mains."],
@@ -30,7 +30,7 @@
   },
   {
     "name": "Chasseur Gorog",
-	"image": "https://static.wikia.nocookie.net/aurelius/images/a/af/Grung.jpg/revision",
+    "image": "https://i.imgur.com/fbhQkU4.jpeg",
     "hearts": 0,
     "agi": 8,
     "spi": 6,
@@ -51,7 +51,7 @@
     ],
     "edges": [
       ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
-	  ["Immunité aux poisons"]
+      ["Immunité aux poisons"]
     ],
     "melee": [
       ["Couteau", "Combat d4, 2d4 dégats."],
@@ -72,7 +72,7 @@
     "parry": 7,
     "pace": 5,
     "toughness": {"total": 6, "armor": 0},
-	"description": "Portant un tambour devant lui, attaché par la taille, le Tambourineur en joue pour galvaniser ses alliés. Les Gorogs utilisent souvent les tambours pour communiquer sur de longues distances, il peut donc servir également à appeler du renfort.",
+    "description": "Portant un tambour devant lui, attaché par la taille, le Tambourineur en joue pour galvaniser ses alliés. Les Gorogs utilisent souvent les tambours pour communiquer sur de longues distances, il peut donc servir également à appeler du renfort.",
     "skills": [
       ["Performance", 8],
       ["Combat", 8]
@@ -81,8 +81,8 @@
       ["Tambour", "Attaché à la ceinture du tambourineur, il le protège mais l'empêche de sauter aussi haut que ses congénères, et réduit sa vitesse. Parade +1, Allure -1."]
     ],
     "edges": [
-	  ["Immunité aux poisons"]
-	],
+      ["Immunité aux poisons"]
+    ],
     "melee": [
       ["Massue", "Combat d8, d8+d6 dégats."],
       ["Coup de langue", "Combat d8, d8+d4 dégats, Allonge 3. Arme naturelle."]
@@ -95,7 +95,7 @@
   },
   {
     "name": "Ranger Gorog",
-	"image": "https://i.redd.it/vlas0kpilo421.png",
+  "image": "https://i.redd.it/vlas0kpilo421.png",
     "hearts": 0,
     "agi": 8,
     "spi": 8,
@@ -104,7 +104,7 @@
     "vig": 8,
     "parry": 4,
     "toughness": {"total": 6, "armor": 0},
-	"description": "Un Gorog qui se cache dans les arbres et utilise sa sarbacane pour chasser.",
+    "description": "Un Gorog qui se cache dans les arbres et utilise sa sarbacane pour chasser.",
     "skills": [
       ["Combat", 6],
       ["Tir", 8],
@@ -116,7 +116,7 @@
     "edges": [
       ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
       ["Familier", "Accompagné d'une Phalène radieuse."],
-	  ["Immunité aux poisons"]
+      ["Immunité aux poisons"]
     ],
     "melee": [
       ["Couteau", "Combat d6, d6+d4 dégats."],
@@ -129,9 +129,9 @@
   },
   {
     "name": "Champion Gorog",
-	"image": "https://i.pinimg.com/564x/52/e6/97/52e697477f65582b551d5f5f0f7afa19.jpg",
+    "image": "https://i.pinimg.com/564x/52/e6/97/52e697477f65582b551d5f5f0f7afa19.jpg",
     "hearts": 1,
-	"joker": true,
+    "joker": true,
     "agi": 8,
     "spi": 8,
     "str": 8,
@@ -140,7 +140,7 @@
     "parry": 7,
     "pace": 7,
     "toughness": {"total": 7, "armor": 1},
-	"description": "Un combattant autant craint que respecté parmi ses pairs, selon la tradition gorog, il manie une lance et une dague empoisonnée.",
+    "description": "Un combattant autant craint que respecté parmi ses pairs, selon la tradition gorog, il manie une lance et une dague empoisonnée.",
     "skills": [
       ["Combat", 8],
       ["Tir", 6],
@@ -153,7 +153,7 @@
       ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
       ["Rapide", "Allure +1."],
       ["Armure rudimentaire", "Armure +1."],
-	  ["Immunité aux poisons"]
+      ["Immunité aux poisons"]
     ],
     "melee": [
       ["Lance", "Combat d8, d8+d6 dégats. Parade +1, Allonge 1, nécessite 2 mains."],
@@ -165,9 +165,9 @@
   },
   {
     "name": "Seigneur Gorog",
-	"image": "https://cdnb.artstation.com/p/assets/images/images/077/961/827/4k/bram-sels-wotc-mtg-glarb-calamitys-augur-bram-sels.jpg",
+    "image": "https://cdnb.artstation.com/p/assets/images/images/077/961/827/4k/bram-sels-wotc-mtg-glarb-calamitys-augur-bram-sels.jpg",
     "hearts": 3,
-	"joker": true,
+    "joker": true,
     "agi": 10,
     "spi": 10,
     "str": 10,
@@ -187,7 +187,7 @@
       ["Monture", "Tigrours ardent. Tant qu'il est dessus, bénéficie de Allure +2. Les deux n'agissent pas en même temps. Au corps à corps, il faut d'abord tuer la monture ou faire tomber le Seigneur Gorog, pour l'atteindre"],
       ["Bond", "Peut sauter 2 fois plus loin que la normale, soit 4m (8 si élan) ; la moitié en hauteur."],
       ["Armure rudimentaire", "Armure +1."],
-	  ["Immunité aux poisons"]
+      ["Immunité aux poisons"]
     ],
     "melee": [
       ["Lance", "Combat d8, d8+d6 dégats. Parade +1, Allonge 1, nécessite 2 mains."],
@@ -201,7 +201,7 @@
   },
   {
     "name": "Phalène radieuse",
-	"image": "https://i.imgur.com/ixZyDbA.jpeg",
+    "image": "https://i.imgur.com/ixZyDbA.jpeg",
     "hearts": 0,
     "agi": 6,
     "spi": 6,
@@ -213,7 +213,7 @@
     "skills": [
       ["Combat", 6],
       ["Perception", 10],
-	  ["Arcanes", 6]
+      ["Arcanes", 6]
     ],
     "hindrances": [
       ["Faiblesse (feu)", "Le feu inflige +4 dommages à la créature."]
@@ -225,13 +225,13 @@
       ["Morsure", "Combat d6, d6+d4 dégats. Arme naturelle."]
     ],
     "magic": [
-	  ["Lumière", "Emet de la lumière avec ses antennes sur 10m à la ronde (action gratuite)"],
-	  ["Éblouissement", "Arcanes d6, Emet une lumière aveuglante dans un petit cône, les victimes subissent -2 [-4] à leurs actions utilisant la vue."]
-	]
+      ["Lumière", "Emet de la lumière avec ses antennes sur 10m à la ronde (action gratuite)"],
+      ["Éblouissement", "Arcanes d6, Emet une lumière aveuglante dans un petit cône, les victimes subissent -2 [-4] à leurs actions utilisant la vue."]
+    ]
   },
   {
     "name": "Tigrours ardent",
-	"image": "https://i.imgur.com/DFcMAFK.jpeg",
+    "image": "https://i.imgur.com/DFcMAFK.jpeg",
     "hearts": 0,
     "agi": 8,
     "spi": 6,
@@ -240,7 +240,7 @@
     "vig": 8,
     "parry": 6,
     "toughness": {"total": 7, "armor": 0},
-	"description": "Une bête sauvage se déplaçant en groupe. Sa queue est surmontée d'une petite flamme, tandis que ses pattes et sa gueule renferment des braises ardentes.",
+    "description": "Une bête sauvage se déplaçant en groupe. Sa queue est surmontée d'une petite flamme, tandis que ses pattes et sa gueule renferment des braises ardentes.",
     "skills": [
       ["Athlétisme", 8],
       ["Combat", 8],
@@ -253,10 +253,10 @@
       ["Phobie (eau)", "N'ira pas dans l'eau."]
     ],
     "edges": [
-	  ["Vision nocturne", "Ignore les malus de pénombre et d'obscurité"],
-	  ["Taille 2", "Résistance et taille +1"],
-	  ["Corps ardent", "Ses griffes et sa gueule incandescents infligent des dommages de feu."]
-	],
+      ["Vision nocturne", "Ignore les malus de pénombre et d'obscurité"],
+      ["Taille 2", "Résistance et taille +1"],
+      ["Corps ardent", "Ses griffes et sa gueule incandescents infligent des dommages de feu."]
+    ],
     "melee": [
       ["Morsure", "Combat d8, d10+d6 dégats. Dommages de feu (pas de brûlure)."],
       ["Balayage de griffe", "Combat d8-2, d10+d6 dégats. Dommages de feu (pas de brûlure)."]
@@ -264,7 +264,7 @@
   },
   {
     "name": "Fleurantule carnivore",
-	"image": "https://image.lexica.art/md2_webp/8fa63bcd-e0f1-47cd-9018-525765301a72",
+    "image": "https://i.pinimg.com/originals/b4/1b/01/b41b019e8508ca94b765f044cc518310.jpg",
     "hearts": 0,
     "agi": 8,
     "spi": 4,
@@ -273,7 +273,7 @@
     "vig": 4,
     "parry": 5,
     "toughness": {"total": 4, "armor": 0},
-	"description": "Cette arraignée surmontée d'une plante carnivore chasse en grands groupes.",
+    "description": "Cette arraignée surmontée d'une plante carnivore chasse en grands groupes.",
     "skills": [
       ["Combat", 6],
       ["Tir", 6],
@@ -281,21 +281,21 @@
     ],
     "hindrances": [
       ["Faiblesse (feu)", "Le feu inflige +4 dommages à la créature."],
-	  ["Point faible (fleur)", "Il est possible d'attendre que la Fleurantule ouvre sa \"fleur\" pour toucher ses organes directement. +6 dégats."]
+      ["Point faible (fleur)", "Il est possible d'attendre que la Fleurantule ouvre sa \"fleur\" pour toucher ses organes directement. +6 dégats."]
     ],
     "edges": [
-	  ["Adhérence+", "Peut se déplacer normalement sur les surfaces verticales ou les plafonds."]
+      ["Adhérence+", "Peut se déplacer normalement sur les surfaces verticales ou les plafonds."]
     ],
     "melee": [
       ["Morsure empoisonnée", "Combat d6, d6+d4 dégats. Inflige Poison : si touchée, la cible doit réussir un jet de Vigueur-2 sous peine d'être Distrait et de subir 1 niveau de Fatigue (2 si échec critique), sans toute fois pouvoir en être incapacité."]
     ],
     "ranged": [
       ["Toile", "Tir d6, portée 6, cible Entravée [Immobilisée]. Toile projetée depuis le thorax."]
-	]
+    ]
   },
   {
     "name": "Lézard de lianes",
-	"image": "https://i.imgur.com/zD05AMS.png",
+    "image": "https://i.imgur.com/zD05AMS.png",
     "hearts": 0,
     "agi": 10,
     "spi": 8,
@@ -304,7 +304,7 @@
     "vig": 6,
     "parry": 6,
     "toughness": {"total": 6, "armor": 1},
-	"description": "Ce reptile se fond souvent dans la végétation de la jungle, se cachant en attendant une opportunité d'attaquer un animal plus faible que lui.",
+    "description": "Ce reptile se fond souvent dans la végétation de la jungle, se cachant en attendant une opportunité d'attaquer un animal plus faible que lui.",
     "skills": [
       ["Combat", 8],
       ["Perception", 10],
@@ -314,9 +314,9 @@
       ["Faiblesse (feu)", "Le feu inflige +4 dommages à la créature."]
     ],
     "edges": [
-	  ["Peau dure", "Armure +1."],
-	  ["Camouflé", "Le Lézard de lianes se fond naturellement dans son environnement. Les personnages doivent réussir un jet de Perception vs. Discrétion du Lézard de liane afin de le détecter."],
-	  ["Immunité aux poisons"]
+      ["Peau dure", "Armure +1."],
+      ["Camouflé", "Le Lézard de lianes se fond naturellement dans son environnement. Les personnages doivent réussir un jet de Perception vs. Discrétion du Lézard de liane afin de le détecter."],
+      ["Immunité aux poisons"]
     ],
     "melee": [
       ["Morsure", "Combat d8, d8+d6 dégats."]
@@ -324,7 +324,7 @@
   },
   {
     "name": "Lézard luxuriant",
-	"image": "https://i.pinimg.com/736x/36/ed/36/36ed36abcd915c71253c85ae04102242.jpg",
+    "image": "https://i.pinimg.com/736x/36/ed/36/36ed36abcd915c71253c85ae04102242.jpg",
     "hearts": 1,
     "agi": 12,
     "spi": 10,
@@ -333,7 +333,7 @@
     "vig": 10,
     "parry": 7,
     "toughness": {"total": 7, "armor": 0},
-	"description": "Ce reptile imposant semble fait de végétation, et sa queue est surmontée d'un poids imprégnée de poison.",
+    "description": "Ce reptile imposant semble fait de végétation, et sa queue est surmontée d'un poids imprégnée de poison.",
     "skills": [
       ["Combat", 10],
       ["Tir", 10],
@@ -343,8 +343,8 @@
       ["Faiblesse (feu)", "Le feu inflige +4 dommages à la créature."]
     ],
     "edges": [
-	  ["Peau écailleuse", "Armure +2."],
-	  ["Immunité aux poisons"]
+      ["Peau écailleuse", "Armure +2."],
+      ["Immunité aux poisons"]
     ],
     "melee": [
       ["Griffure / Morsure", "Combat d10, d10+d6 dégats. Arme naturelle."],
@@ -354,7 +354,7 @@
   },
   {
     "name": "Squelette sabreur",
-	"image": "https://image.lexica.art/md2_webp/8fa63bcd-e0f1-47cd-9018-525765301a72",
+    "image": "https://image.lexica.art/md2_webp/8fa63bcd-e0f1-47cd-9018-525765301a72",
     "hearts": 0,
     "agi": 6,
     "spi": 6,
@@ -379,6 +379,6 @@
     ],
     "ranged": [
       ["Pistolet à silex (x2)", "Tir d6, portée 10/20/40, recharge 2, 2d6+1 dégats."]
-	]
+    ]
   }
 ]
