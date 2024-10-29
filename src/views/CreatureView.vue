@@ -135,7 +135,8 @@
     margin-bottom: .4rem;
     color: #fff;
     font-size: 1.6em;
-	line-height: 1;
+    font-family: "Pirata One", sans-serif;
+    line-height: 1.1;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -145,7 +146,7 @@
     display: inline-block;
   }
   h1.joker {
-    padding-left: 3.2rem;
+    padding-left: 3.6rem;
   }
   h1 .icon {
     fill: #fff;
@@ -163,7 +164,7 @@
     height: 1em;
   }
   h1 .icon-joker {
-    height: 2.8rem;
+    height: 3rem;
     position: absolute;
     top: -.2rem;
     left: .2rem;
